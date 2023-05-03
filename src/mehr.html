@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Urvertrauen</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="./src/img/logo_icon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://use.typekit.net/ved6zsk.css">
+  <!-- <link rel="stylesheet" href="./index.css"> -->
+  <link rel="stylesheet" href="./main.sass">
+  <script src="./main.js" defer type="module"></script>
+</head>
+
+<body class="body-mehr">
+  <header class="header">
+    <a href="../index.html" role="menuitem" class="logo">
+      <img src="./img/logo_foto.svg" alt="">
+    </a>
+    <h2 class="header__name">PRAXIS <br> URVERTRAUEN</h2>
+    <div class="header__open-nav">
+      <a class="header__open-nav--item header__open-nav--item-1" href="../index.html" role="menuitem" id="logo">
+        Home
+      </a>
+      <a class="header__open-nav--item header__open-nav--item-2" href="./src/uebermich.html" role="menuitem" id="logo">
+        Über mich
+      </a>
+      <a class="header__open-nav--item header__open-nav--item-3" href="./src/angebot.html" role="menuitem" id="logo">
+        Angebot
+      </a>
+      <a class="header__open-nav--item header__open-nav--item-4" href="./mehr.html" role="menuitem" id="logo">
+        Mehr
+      </a>
+    </div>
+    <a class="btn, header__btn" href="infos.html">
+      TERMIN <br> VEREINBAREN
+    </a>
+    <nav role='navigation'>
+      <div class="nav__kebab">
+        <!--A fake / hidden checkbox is used as click receiver,
+       so you can use the :checked selector on it.-->
+        <input type="checkbox" />
+        <!--Some spans to act as a kebab-->
+        <span class='kebab__span kebab--top'></span>
+        <span class='kebab__span kebab--middle'></span>
+        <span class='kebab__span kebab--bottom'></span>
+        <span class='kebab__span kebab--hidden'></span>
+        <ul class="menu">
+          <li class="menu__btn"><a href="#">Termin</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./src/uebermich.html">Über mich</a></li>
+          <li><a href="./src/angebot.html">Angebot</a></li>
+          <li><a href="./src/mehr.html">Mehr</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section>
+
+    <div class="contact">
+      <div class="contact__wrap">
+        <div class="contact__mehr-seite">
+          <h2 class="mehr-seite--titel">MEHR... </h2>
+          <span class="mehr-seite--span"></span>
+        </div>
+        <h2 class="contact__titel kunst-font">Kontakt</h2>
+        <p>Termine gerne telefonisch oder <br> per Kontaktformular</p>
+        <div class="contact__daten">
+          <h2 class="contact__name">Praxis Urvertrauen</h2>
+          <p class="contact__addresse">Klaus-Rösner-Ring 29 <br> 25474 Hasloh</p>
+          <p class="contact__tel">Tel. +49 175 299 1654</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="formular">
+      <div class="formular__wrap">
+        <form id="register-form">
+          <h2 class="formular__titel kunst-font">Kontaktformular</h2>
+          <div class="input-wrapper">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" class="feedback-input" placeholder="Name" />
+          </div>
+          <div class="input-wrapper">
+            <label for="email">E-Mail</label>
+            <input id="email" name="email" type="email" class="feedback-input" placeholder="E-Mail" />
+          </div>
+          <textarea name="text" class="feedback-input" placeholder="Nachricht"></textarea>
+          <input type="submit" value="SUBMIT" />
+        </form>
+      </div>
+    </div>
+
+    <div class="anfahrt">
+      <h2 class="kunst-font">Anfahrt</h2>
+      <p class="contact__addresse">Klaus-Rösner-Ring 29 <br> 25474 Hasloh</p>
+      <p>die nächsten Haltestellen sind:</p>
+      <div>
+        <h2>Bus 395</h2>
+        <p>Bahnhofstraße Hasloh</p>
+      </div>
+      <div>
+        <h2>AKN</h2>
+        <p>Hasloh</p>
+      </div>
+      <img src="" alt="">
+    </div>
+
+    <div class="kosten">
+      <h2 class="kunst-font">Kosten</h2>
+      <p>Pro Termin ca. 50 Min. | 90€</p>
+      <p>Jede weitere halbe Stunde <br> im gleichem Termin | 50€</p>
+      <p class="kosten__italics">Bitte beachte, dass Urvertrauen eine Privatpraxis ist und die Kosten selber zu tragen
+        sind. Du kannst im
+        Vorfeld bei Deiner Krankenkasse anfragen, ob Kosten erstattet werden.</p>
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="footer__namen">
+      <h2 class="namen--praxis">
+        PRAXIS <br> URVERTRAUEN
+      </h2>
+      <h2 class="namen--annes">
+        Anne Grysar
+      </h2>
+    </div>
+    <div class="footer__contact-daten">
+      <p class="contact-daten--addresse">
+        Klaus-Rösner-Ring 29, 25474 Hasloh
+      </p>
+      <p class="contact-daten--telefon">
+        Tel. +49 175 299 1654
+      </p>
+    </div>
+    <div class="namen--rechtliches">
+      <div class="impressum-contact-datenschutz">
+        <a href="" class="impressum">
+          Impressum
+        </a>
+        <a href="" class="contact">
+          Kontakt
+        </a>
+        <a href="" class="datenschutz">
+          Datenschutz
+        </a>
+      </div>
+      <p class="copyright">
+        © 2023 | Urvertrauen | Schleswig-Holstein
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
