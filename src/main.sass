@@ -1,3 +1,7 @@
+@tailwind base
+@tailwind components
+@tailwind utilities
+
 // // // // ---------------------------------------------------------------------------------------- // // // //  
 // // // // ---------------------------------------------------------------------------------------- // // // //
 // // // // --------------------------------- // VARIABLES // -------------------------------------- // // // //
@@ -33,9 +37,8 @@ $bold: 700
   box-sizing: border-box
 
 body
-  width: 100vw
-  display: flex
-  flex-direction: column
+  // width: 100vw
+  display: grid
   font-size: 1rem
   font-family: $default
   font-weight: $light
@@ -56,7 +59,7 @@ body
     &:hover
       cursor: pointer
       color: $green
-      font-size: 1.2rem
+      border-bottom: 3px solid $green
       transition: 750ms
 
     &:focus
@@ -304,7 +307,7 @@ main
     .main__hero--intro
       background-color: rgb(255, 255, 255, .74)
       border-radius: 8px
-      padding: 1rem
+      padding: 1.5rem
       line-height: 1.3
       margin-top: 10rem
       text-align: center
@@ -313,6 +316,14 @@ main
       justify-content: center
       color: $very-dark-brown
       gap: 1rem
+
+      // no sirve padding: 4rem, 11rem
+      @media (min-width: 750px)
+        margin-top: 14rem
+        padding-left: 6rem
+        padding-right: 6rem
+        padding-top: 3rem
+        padding-bottom: 3rem
 
       .intro-praxisname
         line-height: 1.5
@@ -325,6 +336,9 @@ main
           background: $light-brown
           border-radius: 2px
           display: block
+
+          @media (min-width: 750px)
+            width: 14rem
 
       .intro-name
         font-weight: $bold
@@ -343,6 +357,10 @@ main
 // // // // ---------------------------------------------------------------------------------------- // // // //  
 // // // // ---------------------------------------------------------------------------------------- // // // //
 
+footer__index
+  @media (min-width: 1000px)
+    margin-top: -12rem
+
 footer
   // grid-area: footer
   display: flex
@@ -358,11 +376,22 @@ footer
   padding: 2.6rem 0rem 3rem 0rem
   margin-top: -15rem
 
+  @media (min-width: 1000px)
+    // flex-direction: row
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    justify-items: center
+
   .footer__namen
     display: flex
     flex-direction: column
     gap: .6rem
+    align-items: center
 
+    @media (min-width: 1000px)
+      grid-column-start: 2
+      gap: .15rem
+      margin-top: 1rem
     >h2
       &.namen--praxis
         line-height: 1.2
@@ -373,11 +402,46 @@ footer
         font-weight: $bold
         font-size: 1.3rem
 
-  .footer__contact-daten,
+        @media (min-width: 1000px)
+          visibility: hidden
+          font-size: 0
+
+    img
+      visibility: hidden
+      width: 0
+
+      @media (min-width: 1000px)
+        visibility: visible
+        width: 4rem
+        transform: rotateX(50deg)
+
+  .footer__kontakt-daten
+    line-height: 1.5
+
+    @media (min-width: 1000px)
+      display: grid
+      grid-column-start: 1
+      grid-row-start: 1
+      grid-row-end: 2
+      gap: .5rem
+
+    h2
+      font-size: 0
+
+      @media (min-width: 1000px)
+        font-size: 1.12rem
+        font-family: $titel
+
   .namen--rechtliches
     line-height: 1.5
 
-  .impressum-contact-datenschutz
+    @media (min-width: 1000px)
+      display: grid
+      gap: .5rem
+      margin-top: -.5rem
+      padding: 0 3rem 0 0
+
+  .impressum-kontakt-datenschutz
     display: flex
     gap: 3rem
     justify-content: center

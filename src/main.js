@@ -94,17 +94,10 @@ document.addEventListener('mousemove', function (e) {
   })
 })();
 
-const person = {
-  name: 'JOhn',
-  age: 1,
-};
 
 
 
-
-
-
-// FOR KUNA!!!
+// FOR ANUK!!!
 
 
 //-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/ CONTACT FORM
