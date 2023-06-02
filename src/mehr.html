@@ -16,6 +16,10 @@
   <script src="./main.js" defer type="module"></script>
 </head>
 
+<!-- PROBAR ESTOS CODIGOS -->
+<!-- https://tailwindui.com/components/marketing/elements/headers -->
+<!-- https://flowbite.com/docs/components/navbar/ -->
+
 <body class="body-mehr">
   <header class="header">
     <a href="../index.html" role="menuitem" class="logo">
@@ -61,60 +65,81 @@
   </header>
 
   <section>
-
-    <div class="contact">
-      <div class="contact__wrap">
-        <div class="contact__mehr-seite">
-          <h2 class="mehr-seite--titel">MEHR... </h2>
-          <span class="mehr-seite--span"></span>
+    <div class="contact-formular__wrap">
+      <div class="contact">
+        <div class="contact__wrap">
+          <div class="contact__mehr-seite">
+            <h2 class="mehr-seite--titel">MEHR... </h2>
+            <span class="mehr-seite--span"></span>
+          </div>
+          <h2 class="contact__titel kunst-font">Kontakt</h2>
+          <p>Termine gerne telefonisch oder <br> per Kontaktformular</p>
+          <div class="contact__daten">
+            <h2 class="contact__name">Praxis Urvertrauen</h2>
+            <p class="contact__addresse">Klaus-Rösner-Ring 29 <br> 25474 Hasloh</p>
+            <p class="contact__tel">Tel. +49 175 299 1654</p>
+          </div>
         </div>
-        <h2 class="contact__titel kunst-font">Kontakt</h2>
-        <p>Termine gerne telefonisch oder <br> per Kontaktformular</p>
-        <div class="contact__daten">
-          <h2 class="contact__name">Praxis Urvertrauen</h2>
-          <p class="contact__addresse">Klaus-Rösner-Ring 29 <br> 25474 Hasloh</p>
-          <p class="contact__tel">Tel. +49 175 299 1654</p>
+      </div>
+      <div class="formular">
+        <div class="formular__wrap">
+          <form id="register-form">
+            <h2 class="formular__titel kunst-font">Kontaktformular</h2>
+            <div class="form--anrede">
+              <label id="anrede-label" for="anrede" type="text" aria-describedby="nameHint">Anrede:</label>
+              <select id="anrede" name="anrede" data-check="anrede">
+                <option value="">Bitte wählen</option>
+                <option value="dear individual">Liebes Individuum</option>
+                <option value="dear person">Lieber Mensch</option>
+                <option value="dear child">Liebes Kind</option>
+                <option value="female">Frau</option>
+                <option value="male">Herr</option>
+              </select>
+              <p id="anredeHint" class="error hidden" name="anrede">Wahl erforderlich!</p>
+            </div>
+            <div class="input-wrapper">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" class="feedback-input" placeholder="Name" />
+            </div>
+            <div class="input-wrapper">
+              <label for="email">E-Mail</label>
+              <input id="email" name="email" type="email" class="feedback-input" placeholder="E-Mail" />
+            </div>
+            <div>
+              <label for="message">Nachricht</label>
+              <textarea id="message" name="message" class="feedback-input" placeholder="Nachricht"></textarea>
+            </div>
+            <input type="submit" value="SUBMIT" />
+          </form>
         </div>
       </div>
     </div>
-
-    <div class="formular">
-      <div class="formular__wrap">
-        <form id="register-form">
-          <h2 class="formular__titel kunst-font">Kontaktformular</h2>
-          <div class="input-wrapper">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" class="feedback-input" placeholder="Name" />
-          </div>
-          <div class="input-wrapper">
-            <label for="email">E-Mail</label>
-            <input id="email" name="email" type="email" class="feedback-input" placeholder="E-Mail" />
-          </div>
-          <textarea name="text" class="feedback-input" placeholder="Nachricht"></textarea>
-          <input type="submit" value="SUBMIT" />
-        </form>
-      </div>
-    </div>
-
     <div class="anfahrt">
-      <h2 class="kunst-font">Anfahrt</h2>
-      <p class="contact__addresse">Klaus-Rösner-Ring 29 <br> 25474 Hasloh</p>
-      <p>die nächsten Haltestellen sind:</p>
       <div>
-        <h2>Bus 395</h2>
-        <p>Bahnhofstraße Hasloh</p>
+        <h2 class="anfahrt__titel kunst-font">Anfahrt</h2>
+        <p class="font-bold contact__address">Klaus-Rösner-Ring 29 <br> 25474 Hasloh</p>
+        <p>die nächsten Haltestellen sind:</p>
+        <div>
+          <h2 class="font-bold">Bus 395</h2>
+          <p>Bahnhofstraße Hasloh</p>
+        </div>
+        <div>
+          <h2 class="font-bold">AKN</h2>
+          <p>Hasloh</p>
+        </div>
       </div>
+
       <div>
-        <h2>AKN</h2>
-        <p>Hasloh</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2362.5562279461806!2d9.917735577724319!3d53.690534172391146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b229c92a475a51%3A0xb7accde64336bf03!2sKlaus-R%C3%B6sner-Ring%2029%2C%2025474%20Hasloh!5e0!3m2!1sde!2sde!4v1684471917083!5m2!1sde!2sde"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <img src="" alt="">
     </div>
 
     <div class="kosten">
-      <h2 class="kunst-font">Kosten</h2>
+      <h2 class="kosten__titel kunst-font">Kosten</h2>
       <p>Pro Termin ca. 50 Min. | 90€</p>
-      <p>Jede weitere halbe Stunde <br> im gleichem Termin | 50€</p>
+      <p>Jede weitere <b>halbe Stunde</b> <br class="md:hidden"> im gleichem Termin | 50€</p>
       <p class="kosten__italics">Bitte beachte, dass Urvertrauen eine Privatpraxis ist und die Kosten selber zu tragen
         sind. Du kannst im
         Vorfeld bei Deiner Krankenkasse anfragen, ob Kosten erstattet werden.</p>
@@ -122,7 +147,7 @@
 
   </section>
 
-  <footer class="footer__index">
+  <footer class="footer">
     <div class="footer__namen">
       <h2 class="namen--praxis">
         PRAXIS <br> URVERTRAUEN
