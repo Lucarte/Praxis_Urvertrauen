@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html', './src/mehr.html'],
+  mode: 'jit',
+  purge: ['./index.html', './src/html/mehr.html', './src/html/angebot.html', './src/html/uebermich.html'],
+  // purge: ['./src/*.html'],
   theme: {
     extend: {},
     colors: {
