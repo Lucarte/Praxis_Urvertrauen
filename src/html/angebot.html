@@ -14,15 +14,16 @@
   <!-- <link rel="stylesheet" href="./index.css"> -->
   <link rel="stylesheet" href="../main.sass">
   <script src="../main.js" defer type="module"></script>
+  <!-- trying it this way as the config. does not seem to work... -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<!-- <body class="flex flex-col h-screen"> -->
 <body class="body-angebot flex flex-col min-h-screen items-center"></body>
-  <header>
+  <header class="z-50">
     <a href="../../index.html" role="menuitem" class="logo">
       <img src="../img/logo_foto.svg" alt="">
     </a>
-    <h2 class="header__name bg-slate-600">PRAXIS <br> URVERTRAUEN</h2>
+    <h2 class="header__name">PRAXIS<br> URVERTRAUEN</h2>
     <div class="header__open-nav">
       <a class="header__open-nav--item header__open-nav--item-1" href="../../index.html" role="menuitem" id="logo">
         Home
@@ -62,14 +63,26 @@
     </nav>
   </header>
 
-  <section class="section__one bg-darkTurquis">
-    <div class="pt-40 pb-12 md:px-20 lg:pt-56 lg:px-36 lg:431 lg:first-line:pb-96 xl:px-64 2xl:px-80">
-      <h2 class="angebot__titel sm:mt-0 ml-8 font-bold mb-12 text-lg lg:hidden">ANGEBOT</h2>
-      <span class="angebot__titel--span lg:opacity-0"></span>
-      <h2 class="section__titel text-center text-2xl mb-6 lg:mb-8 -mt-6  text-veryDarkBrown font-bold">Dialogische Körpertherapie</h2>
-      <span class="section__titel--span h-0 lg:block rounded-lg lg:h-1 w-36 bg-darkTurquis -mt-2 mb-16"></span>
-      <div class="h-96 overflow-scroll mx-10">
-        <p class="section__p text-center leading-8">Es ist wie ein Wunder: Der Körper ist ein riesengroßer Speicher voller Erinnerungen und Wissen.
+    <!-- 
+
+    SECTION ONE
+
+   -->
+
+  <section class="section__one w-screen bg-gradient-to-r from-darkTurquis to-lightTurquis lg:flex flex-row mt-[7.3rem] ">
+    <div class="hidden lg:flex relative items-center bg-darkBrown w-[25%] xl:w-[30%] min-[1700px]:w-[20%]">
+      <img class="absolute -right-16 max-w-[250px] xl:max-w-[350px]" src="../img/mutter_kind.png" alt="Picture of a mother (waist down dressed with kakhi pants and a fall jacket) holding both hands of a todler right in front of her as if giving his second steps">
+    </div>
+    <div class="pt-16 pb-20 md:px-10 lg:py-0 mt-[6%] mb-[9%] h-full lg:w-[75%] xl:pt-16 mx-10 xl:px-16 xl:w-[70%] min-[1700px]:w-[80%] ">
+      <h2 class="sm:mt-0 ml-8 font-bold text-darkBrown mb-12 text-lg lg:hidden">ANGEBOT</h2>
+      <span class="block w-[5.5rem] h-[.2rem] bg-lightBrown rounded-lg -mt-10 mb-20 ml-16 lg:hidden"></span>
+      <div class="flex flex-col items-center mb-6  text-darkBrown font-bold font-titel ">
+        <h2 class="hidden lg:flex lg:text-[23px] xl:text-2xl">Psychotherapie - kennt man...</h2>
+        <h2 class="hidden lg:flex mb-16 lg:text-[23px] xl:text-2xl">Aber Dialogische Körpertherapie - Was ist das?<span class="absolute rounded-lg h-1 w-[29rem] bg-lightBrown mt-12 ml-16"></span></h2> 
+      </div>
+      <h2 class="font-titel font-bold text-center text-2xl mb-6 -mt-6  text-darkBrown lg:hidden">Dialogische Körpertherapie</h2>
+      <div class="h-96 overflow-scroll mx-10 text-darkBrown">
+        <p class="text-center leading-8 lg:text-[17px]">Es ist wie ein Wunder:  Der Körper ist ein riesengroßer Speicher voller Erinnerungen und Wissen.
           Insbesondere schlechte Erfahrungen werden abgespeichert und oft erst einmal in Spannungen festgehalten. Das ist zum einen
           ein lebenswichtiger Mechanismus, der uns vor Verletzungen schützt, der aber auch schöne Erfahrungen und Möglichkeiten
           blockiert, weil der Körper dann nicht mehr für alles durchlässig ist.
@@ -88,14 +101,24 @@
           unterschiedlich sein können und sch auch ändern können im Laufe eines Prozesses. Manches geht ganz schnell, anderes
           braucht Durchhaltevermögen.
           Bei allen weiteren Terminen wird es eine Mischung aus Gespräch und Körperarbeit geben.
-          Bringe bitte zu allen Terminen ein großes Handtuch mit und ziehe bequeme Kleidung an.</p>
+          Bringe bitte zu allen Terminen ein großes Handtuch mit und ziehe bequeme Kleidung an.
+        </p>
       </div>
     </div>
   </section>
+
+
+  <!-- 
+
+    SECTION TWO
+
+   -->
+
+
   <section class="section__two w-screen bg-lightBrown">
     <div class="pt-20 pb-12 md:px-20 lg:pt-56 lg:px-36 lg:431 lg:first-line:pb-96 xl:px-64 2xl:px-80">
-      <h2 class="hypnose__titel text-2xl text-center  mb-6 -mt-6  text-veryDarkBrown font-bold">Hypnose</h2>
-      <span class="section__titel--span h-0 lg:block rounded-lg lg:h-1 w-36 bg-darkTurquis -mt-2 mb-16"></span>
+      <h2 class="hypnose__titel text-2xl text-center  mb-6 -mt-6  text-veryDarkBrown font-bold font-titel">Hypnose</h2>
+      <span class="h-0 lg:block rounded-lg lg:h-1 w-36 bg-darkTurquis -mt-2 mb-16"></span>
       <div class="h-96 overflow-scroll">
         <p class="section__p text-center leading-8 mx-8">Hypnose – gackern wie ein Huhn…
           Hypnosetherapie – was passiert da?
@@ -122,13 +145,22 @@
       <img src="../img/kugel.png" alt="" class="mobile__img relative scale-125 min-w-full lg:-z-10 lg:h-0">
     </div>
   </section>
+
+
+     <!-- 
+
+    SECTION THREE
+
+   -->
+
+   
   <section class="section__three bg-darkTurquis">
     <div class="pt-16 pb-10 md:px-20 lg:pt-56 lg:px-36 lg:431 lg:first-line:pb-96 xl:px-64 2xl:px-80">
-      <h2 class="section__titel text-center text-2xl mb-0 lg:mb-8 -mt-6  text-veryDarkBrown font-bold">F A Q</h2>
-      <span class="section__titel--span h-0 lg:block rounded-lg lg:h-1 w-36 bg-darkTurquis -mt-2 mb-16"></span>
+      <h2 class="text-center text-2xl mb-0 lg:mb-8 -mt-6  text-veryDarkBrown font-bold">F A Q</h2>
+      <span class="h-0 lg:block rounded-lg lg:h-1 w-36 bg-darkTurquis -mt-2 mb-16"></span>
       <div class="pt-4 overflow-scroll">
         <h3 class="font-bold mt-4 text-center mx-8">
-          Wie lage dauert ein Termin und welche Kosten kommen auf mich zu?
+          Wie lange dauert ein Termin und welche Kosten kommen auf mich zu?
         </h3>
         <p class="section__p text-center leading-8">
           Ein Termin von ca. 50 Minuten berechne ich mit 90€.

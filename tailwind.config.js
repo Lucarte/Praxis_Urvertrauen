@@ -3,6 +3,10 @@ module.exports = {
   content: ['./index.html', './src/html/mehr.html', './src/html/angebot.html', './src/html/uebermich.html'],
   // content: ['./src/*.html'],
   theme: {
+    fontFamily: {
+      'titel': ['felt-tip-roman'],
+      'sans': ['kaisei-opti', 'nunito', 'Helvetica']
+    },
     extend: {},
     colors: {
       veryDarkBrown: '#412f20',
