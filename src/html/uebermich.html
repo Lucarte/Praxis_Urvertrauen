@@ -17,59 +17,132 @@
 </head>
 
 <body class="body-uebermich flex flex-col min-h-screen items-center">
-  <header class="header z-50">
-    <a href="../../index.html" role="menuitem" class="logo">
-      <img src="../img/logo_foto.svg" alt="">
+  <header class="header z-40 h-28">
+    <a href="../../index.html" role="menuitem" class="logo z-40">
+      <img src="../img/logo_foto.svg"
+        alt="graphic design of a spiral simulating a tree trunk, origin to the second half of the design: a branch showing two leaves, one pointing right, the other left. Both in green, the trunk in brown." />
     </a>
-    <h2 class="header__name bg-slate-600">PRAXIS <br> URVERTRAUEN</h2>
+    <h2 class="header__name">
+      PRAXIS
+      <br />
+      URVERTRAUEN
+    </h2>
     <div class="header__open-nav">
-      <a class="header__open-nav--item header__open-nav--item-1" href="../../index.html" role="menuitem" id="logo">
-        Home
-      </a>
-      <a class="header__open-nav--item header__open-nav--item-2" href="../html/uebermich.html" role="menuitem"
-        id="logo">
-        Über mich
-      </a>
-      <a class="header__open-nav--item header__open-nav--item-3" href="../html/angebot.html" role="menuitem" id="logo">
-        Angebot
-      </a>
-      <a class="header__open-nav--item header__open-nav--item-4" href="./mehr.html" role="menuitem" id="logo">
-        Mehr
-      </a>
-    </div>
-    <a class="btn, header__btn" href="../html/mehr.html">
-      TERMIN <br> VEREINBAREN
-    </a>
-    <nav role='navigation'>
-      <div class="nav__kebab">
-        <!--A fake / hidden checkbox is used as click receiver,
-       so you can use the :checked selector on it.-->
-        <input type="checkbox" />
-        <!--Some spans to act as a kebab-->
-        <span class='kebab__span kebab--top'></span>
-        <span class='kebab__span kebab--middle'></span>
-        <span class='kebab__span kebab--bottom'></span>
-        <span class='kebab__span kebab--hidden'></span>
-        <ul class="menu">
-          <li class="menu__btn"><a href="#">Termin</a></li>
-          <li><a href="../../index.html">Home</a></li>
-          <li><a href="../html/uebermich.html">Über mich</a></li>
-          <li><a href="../html/angebot.html">Angebot</a></li>
-          <li><a href="../html/mehr.html">Mehr</a></li>
-        </ul>
+      <!-- Menu HOME -->
+      <div data-dropdown class="dropdown">
+        <a data-dropdown-button class="header__open-nav--item flex flex-col mt-4 items-center" href="../../index.html"
+          role="menuitem">
+          Home
+        </a>
       </div>
-    </nav>
+
+      <!-- Menu ÜBER MICH -->
+      <div data-dropdown class="dropdown">
+        <button data-dropdown-button class="link header__open-nav--item flex flex-col mt-4 items-center">Über
+          mich
+          <div class="dropdown-menu flex flex-col gap-2 p-4 bg-darkTurquis rounded-md shadow-shadowMenu w-36">
+            <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none text-veryDarkBrown p-2 hover:text-green"
+              href="./uebermich.html" role="menuitem">Kennst du das?</a>
+            <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none p-2 text-veryDarkBrown hover:text-green"
+              href="./uebermich.html#qualifications" role="menuitem">Qualifications</a>
+          </div>
+        </button>
+      </div>
+
+      <!-- Menu ANGEBOT -->
+      <div data-dropdown class="dropdown">
+        <button data-dropdown-button class="header__open-nav--item flex flex-col mt-4 items-center">
+          Angebot
+          <div class="dropdown-menu flex flex-col gap-2 mt-0 p-4 bg-darkTurquis rounded-md shadow-shadowMenu w-36">
+            <a class="text-sm shadow-shadowSubmenu rounded-lg hover:shadow-none p-2 hover:text-green"
+              href="./angebot.html" role="menuitem">
+              Dialoggische-<br>Körpertherapie
+            </a>
+            <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none p-2 hover:text-green"
+              href="./angebot.html#hypnose" role="menuitem">
+              Hypnose
+            </a>
+            <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none p-2 hover:text-green"
+              href="./angebot.html#FAQ" role="menuitem">
+              FAQ
+            </a>
+          </div>
+        </button>
+      </div>
+
+      <!-- Menu MEHR -->
+      <div data-dropdown class="dropdown">
+        <button data-dropdown-button class="header__open-nav--item flex flex-col mt-4 items-center">
+          Mehr
+          <div
+            class="text-sm dropdown-menu flex flex-col gap-2 mt-0 p-4 bg-darkTurquis rounded-md shadow-shadowMenu w-36 ">
+            <a class="shadow-shadowSubmenu rounded-md hover:shadow-none py-2 hover:text-green" href="./mehr.html"
+              role="menuitem">
+              Kontakt
+            </a>
+            <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none py-2 hover:text-green"
+              href="./mehr.html#anfahrt" role="menuitem">
+              Anfahrt
+            </a>
+            <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none py-2 hover:text-green"
+              href="./mehr.html#kosten" role="menuitem">
+              Kosten
+            </a>
+          </div>
+        </button>
+      </div>
+
+      <!-- CTA BUTTON -->
+      <a class="btn, header__btn" href="./mehr.html">
+        TERMIN
+        <br />
+        VEREINBAREN
+      </a>
+      <nav role="navigation">
+        <div class="nav__kebab">
+          <!--A fake / hidden checkbox is used as click receiver,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       so you can use the :checked selector on it.-->
+          <input type="checkbox" />
+          <!--Some spans to act as a kebab-->
+          <span class="kebab__span kebab--top"></span>
+          <span class="kebab__span kebab--middle"></span>
+          <span class="kebab__span kebab--bottom"></span>
+          <span class="kebab__span kebab--hidden"></span>
+          <ul class="menu">
+            <li class="menu__btn">
+              <a href="./mehr.html#formular">Termin</a>
+            </li>
+            <li>
+              <a href="../../index.html">Home</a>
+            </li>
+            <li>
+              <a href="./uebermich.html">Über mich</a>
+            </li>
+            <li>
+              <a href="./angebot.html">Angebot</a>
+            </li>
+            <li>
+              <a href="./mehr.html">Mehr</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
+
   <section class="section__one">
-    <div class="pt-40 px-10 pb-10 md:px-20 lg:pt-56 lg:px-36 lg:431
-    lg:first-line:pb-96 xl:px-64 2xl:px-80">
+    <div
+      class="pt-40 px-10 pb-10 md:px-20 lg:pt-64 lg:px-36 lg:431 lg:first-line:pb-96 xl:px-64 2xl:px-80 lg:h-[60rem]">
       <h2 class="uebermich__titel font-bold mb-12 text-lg lg:hidden">ÜBER MICH</h2>
       <span class="uebermich__titel--span lg:opacity-0"></span>
-      <h2 class="section__titel text-center text-2xl mb-8 -mt-6  text-veryDarkBrown font-bold">Kennst du das ?</h2>
-      <span class="section__titel--span h-0 lg:block rounded-lg lg:h-1 w-36 bg-darkTurquis -mt-2 mb-16"></span>
-      <div class="h-80 pt-6 overflow-scroll">
-        <p class="section__p text-center leading-8">Du triffst einen Menschen, unterhältst Dich und später
+      <h2 class="section__titel text-center text-2xl mb-2  text-veryDarkBrown font-bold">
+        Kennst du das ?<span class="absolute h-0 rounded-lg lg:h-1 w-36 bg-darkTurquis mt-12 -ml-24 "></span></h2>
+
+      <div class="h-80 lg:h-[26rem] pt-6 overflow-scroll">
+        <p class="text-center 2xl:text-[1.05rem] leading-[2.3rem] 2xl:leading-[3rem]">Du triffst einen Menschen,
+          unterhältst Dich und
+          später
           erkennst Du,
           wie
           wertvoll
@@ -96,15 +169,18 @@
           bisherigen Weges war.
           Ich arbeite voller Liebe, Ruhe und Neugier sowohl in meiner Praxis als Therapeutin, als auch in Schulungen als
           Dozentin und bin gespannt, welchen Wegweisern ich noch begegnen werde und wem ich alles eine neue Richtung,
-          Sichtweise oder Tiefe geben darf. </p>
+          Sichtweise oder Tiefe geben darf.
+        </p>
       </div>
     </div>
     <div class="overflow-hidden lg:hidden lg:w-0">
-      <img src="../img/kid_on_shoulders.png" alt="" class="mobile__img relative scale-125 min-w-full lg:-z-10 lg:h-0">
+      <img src="../img/kid_on_shoulders.png"
+        alt="photo of a kid on the shoulders of a parent, seen from the back, in the forest."
+        class="mobile__img relative scale-125 min-w-full lg:-z-10 lg:h-0">
     </div>
   </section>
 
-  <section class="section__two m-8 max-w-3xl">
+  <section id="qualifications" class="section__two m-8 max-w-3xl">
     <div class="mb-8">
       <h2 class="font-titel text-2xl font-bold mt-10 mb-4 text-center">Qualifikationen</h2>
       <p class="text-center font-medium mb-10">Neben meiner durchgängigen physiotherapeutischen Arbeit mit
@@ -112,65 +188,113 @@
         der
         Orthopädie und Neurologie
         kann ich unter anderem folgendes nachweisen:</p>
-      <ul class="flex flex-col gap-6 ml-12 text-left">
-        <li><span>Ausbildung <b class="font-bold">Dialogische Körperpsychotherapie</b> bei Nicole Ulsamer 2022</span>
+      <ul class="flex flex-col gap-6 ml-4 md:ml-12 text-left">
+        <li>
+          <span>Ausbildung
+            <b class="font-bold">Dialogische Körperpsychotherapie</b>
+            bei Nicole Ulsamer 2022</span>
         </li>
-        <li><span><b class="font-bold">Dozentin</b> an der HPA Norderstedt in den Fächern Bewegungsapparat und
+        <li>
+          <span>
+            <b class="font-bold">Dozentin</b>
+            an der HPA Norderstedt in den Fächern Bewegungsapparat und
             Psychotherapie
-          </span></li>
-        <li><span><b class="font-bold">Heilpraktiker für Psychotherapie</b> 2022</span></li>
-        <li><span>Somatische Emotionale Integration (<b class="font-bold">SEI</b>) bei Dami Charf 2020</span></li>
-        <li><span><b class="font-bold">Dozentenassistenz</b> bei Cura-Akademie für funktionelle Osteopathie
-            2017-2019</span></li>
-        <li><span><b class="font-bold">Funktionelle Osteopathie</b> Abschlussprüfung 2016</span></li>
-        <li><span><b class="font-bold">Reflexzonentherapie</b> 2010</span></li>
-        <li><span><b class="font-bold">Bachelor Physiotherapie</b> (NL) 2004</li></span>
-        <li><span>Studium der Physiotherapie an der Hogeschool Zuyd 2000-2004</span></li>
-        <li><span>Ausbildung<b class="font-bold">Energiearbeit</b> 2000-2003</span></li>
-        <li><span><b class="font-bold">Freiwilliges Soziales Jahr</b> Fachklinik für Psychiatrie 1999-2000</span></li>
-        <li><span><b class="font-bold">Meditationserfahrung</b> seit ca. 1997</span></li>
+          </span>
+        </li>
+        <li>
+          <span>
+            <b class="font-bold">Heilpraktiker für Psychotherapie</b>
+            2022</span>
+        </li>
+        <li>
+          <span>Somatische Emotionale Integration (<b class="font-bold">SEI</b>) bei Dami Charf 2020</span>
+        </li>
+        <li>
+          <span>
+            <b class="font-bold">Dozentenassistenz</b>
+            bei Cura-Akademie für funktionelle Osteopathie
+            2017-2019</span>
+        </li>
+        <li>
+          <span>
+            <b class="font-bold">Funktionelle Osteopathie</b>
+            Abschlussprüfung 2016</span>
+        </li>
+        <li>
+          <span>
+            <b class="font-bold">Reflexzonentherapie</b>
+            2010</span>
+        </li>
+        <li>
+          <span>
+            <b class="font-bold">Bachelor Physiotherapie</b>
+            (NL) 2004
+        </li>
+        </li>
+        </span>
+        <li>
+          <span>Studium der Physiotherapie an der Hogeschool Zuyd 2000-2004</span>
+        </li>
+        <li>
+          <span>Ausbildung<b class="font-bold">Energiearbeit</b>
+            2000-2003</span>
+        </li>
+        <li>
+          <span>
+            <b class="font-bold">Freiwilliges Soziales Jahr</b>
+            Fachklinik für Psychiatrie 1999-2000</span>
+        </li>
+        <li>
+          <span>
+            <b class="font-bold">Meditationserfahrung</b>
+            seit ca. 1997</span>
+        </li>
       </ul>
     </div>
-  </section>
+</body>
 
-  <footer class="mt-auto w-screen">
-    <div class="footer__namen">
-      <h2 class="namen--praxis">
-        PRAXIS <br> URVERTRAUEN
-      </h2>
-      <h2 class="namen--annes">
-        Anne Grysar
-      </h2>
-      <img src="../img/tree.svg" alt="bottom half of the logo">
+</html>
+</section>
+<footer class="mt-auto w-screen">
+  <div class="footer__namen">
+    <h2 class="namen--praxis">
+      PRAXIS
+      <br>
+      URVERTRAUEN
+    </h2>
+    <h2 class="namen--annes">
+      Anne Grysar
+    </h2>
+    <img src="../img/tree.svg" alt="bottom half of the logo">
+  </div>
+  <div class="footer__kontakt-daten">
+    <h2 class="namen--annes font-bold">
+      ANNE GRYSAR
+    </h2>
+    <p class="kontakt-daten--addresse">
+      Klaus-Rösner-Ring 29, 25474 Hasloh
+    </p>
+    <p class="kontakt-daten--telefon">
+      Tel. +49 175 299 1654
+    </p>
+  </div>
+  <div class="namen--rechtliches">
+    <div class="impressum-kontakt-datenschutz">
+      <a href="" class="impressum">
+        Impressum
+      </a>
+      <a href="../html/mehr.html" class="kontakt">
+        Kontakt
+      </a>
+      <a href="../html/datenschutz.html" class="datenschutz">
+        Datenschutz
+      </a>
     </div>
-    <div class="footer__kontakt-daten">
-      <h2 class="namen--annes font-bold">
-        ANNE GRYSAR
-      </h2>
-      <p class="kontakt-daten--addresse">
-        Klaus-Rösner-Ring 29, 25474 Hasloh
-      </p>
-      <p class="kontakt-daten--telefon">
-        Tel. +49 175 299 1654
-      </p>
-    </div>
-    <div class="namen--rechtliches">
-      <div class="impressum-kontakt-datenschutz">
-        <a href="" class="impressum">
-          Impressum
-        </a>
-        <a href="../html/mehr.html" class="kontakt">
-          Kontakt
-        </a>
-        <a href="../html/datenschutz.html" class="datenschutz">
-          Datenschutz
-        </a>
-      </div>
-      <p class="copyright">
-        © 2023 | Urvertrauen | Schleswig-Holstein
-      </p>
-    </div>
-  </footer>
+    <p class="copyright">
+      © 2023 | Urvertrauen | Schleswig-Holstein
+    </p>
+  </div>
+</footer>
 </body>
 
 </html>

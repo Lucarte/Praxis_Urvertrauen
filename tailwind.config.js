@@ -7,7 +7,12 @@ module.exports = {
       'titel': ['felt-tip-roman'],
       'sans': ['kaisei-opti', 'nunito', 'Helvetica']
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        'shadowMenu': '1px 3px -1px rgba(157, 157, 182, .6)',
+        'shadowSubmenu': '1px 3px 15px rgba(168, 187, 182, .6)'
+      }
+    },
     colors: {
       veryDarkBrown: '#412f20',
       darkBrown: '#7e5e45',
@@ -17,6 +22,7 @@ module.exports = {
       lightTurquis: '#d7e6e7',
       darkTurquis: '#c0d5d6',
       fontLight: '#c0d5d6',
+      turquisTransparent: 'rgba(168, 187, 182, .5)',
     },
   },
   plugins: [],

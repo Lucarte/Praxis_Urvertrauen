@@ -1,79 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Urvertrauen</title>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="shortcut icon"
-      href="./src/img/logo_icon.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="https://use.typekit.net/ved6zsk.css" />
-    <!-- <link rel="stylesheet" href="./index.css"> -->
-    <link rel="stylesheet" href="../main.sass" />
-    <script src="../main.js" defer type="module"></script>
-  </head>
 
-  <body class="body-mehr">
-    <header class="header z-50">
-      <a href="../../index.html" role="menuitem" class="logo">
-        <img src="../img/logo_foto.svg" alt="" />
-      </a>
-      <h2 class="header__name bg-slate-600">
-        PRAXIS <br />
-        URVERTRAUEN
-      </h2>
-      <div class="header__open-nav">
-        <a
-          class="header__open-nav--item header__open-nav--item-1"
-          href="../../index.html"
-          role="menuitem"
-          id="logo"
-        >
+<head>
+  <title>Urvertrauen</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="./src/img/logo_icon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://use.typekit.net/ved6zsk.css" />
+  <!-- <link rel="stylesheet" href="./index.css"> -->
+  <link rel="stylesheet" href="../main.sass" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../main.js" defer type="module"></script>
+</head>
+
+<body class="body-mehr">
+
+  <!-- 
+      
+      
+              HEADER
+    
+    
+    -->
+  <header class="header z-50 h-28">
+    <a href="../../index.html" role="menuitem" class="logo z-50">
+      <img src="../img/logo_foto.svg"
+        alt="graphic design of a spiral simulating a tree trunk, origin to the second half of the design: a branch showing two leaves, one pointing right, the other left. Both in green, the trunk in brown." />
+    </a>
+    <h2 class="header__name">
+      PRAXIS
+      <br />
+      URVERTRAUEN
+    </h2>
+    <div class="header__open-nav">
+
+      <!-- Menu HOME -->
+      <div data-dropdown class="dropdown">
+        <a data-dropdown-button class="header__open-nav--item flex flex-col mt-4 items-center" href="../../index.html"
+          role="menuitem">
           Home
         </a>
-        <a
-          class="header__open-nav--item header__open-nav--item-2"
-          href="../html/uebermich.html"
-          role="menuitem"
-          id="logo"
-        >
-          Über mich
-        </a>
-        <a
-          class="header__open-nav--item header__open-nav--item-3"
-          href="../html/angebot.html"
-          role="menuitem"
-          id="logo"
-        >
-          Angebot
-        </a>
-        <a
-          class="header__open-nav--item header__open-nav--item-4"
-          href="./mehr.html"
-          role="menuitem"
-          id="logo"
-        >
-          Mehr
-        </a>
       </div>
-      <a class="btn, header__btn" href="../html/mehr.html">
-        TERMIN <br />
+
+      <!-- Menu ÜBER MICH -->
+      <div data-dropdown class="dropdown">
+        <button data-dropdown-button class="header__open-nav--item flex flex-col mt-4 items-center">
+          Über mich
+          <div class="dropdown-menu flex flex-col gap-2 p-4 bg-darkTurquis rounded-md shadow-shadowMenu w-36">
+            <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none p-2 hover:text-green"
+              href="./uebermich.html" role="menuitem">Kennst du das?</a>
+            <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none p-2 hover:text-green"
+              href="./uebermich.html#qualifications" role="menuitem">Qualifications</a>
+          </div>
+        </button>
+      </div>
+
+      <!-- Menu ANGEBOT -->
+      <div data-dropdown class="dropdown">
+        <button data-dropdown-button class="header__open-nav--item flex flex-col mt-4 items-center">
+          Angebot
+          <div class="dropdown-menu flex flex-col gap-2 mt-0 p-4 bg-darkTurquis rounded-md shadow-shadowMenu w-36">
+            <a class="text-sm shadow-shadowSubmenu rounded-lg hover:shadow-none p-2 hover:text-green"
+              href="./angebot.html" role="menuitem">
+              Dialoggische-<br />Körpertherapie
+            </a>
+            <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none p-2 hover:text-green"
+              href="./angebot.html#hypnose" role="menuitem">
+              Hypnose
+            </a>
+            <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none p-2 hover:text-green"
+              href="./angebot.html#FAQ" role="menuitem">
+              FAQ
+            </a>
+          </div>
+        </button>
+      </div>
+
+      <!-- Menu MEHR -->
+      <div data-dropdown class="dropdown">
+        <button data-dropdown-button class="link header__open-nav--item flex flex-col mt-4 items-center">Mehr
+          <div
+            class="text-sm dropdown-menu flex flex-col gap-2 mt-0 p-4 bg-darkTurquis rounded-md shadow-shadowMenu w-36">
+            <a class="shadow-shadowSubmenu rounded-md hover:shadow-none py-2 text-veryDarkBrown hover:text-green"
+              href="./mehr.html" role="menuitem">
+              Kontakt
+            </a>
+            <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none py-2 text-veryDarkBrown hover:text-green"
+              href="./mehr.html#anfahrt" role="menuitem">
+              Anfahrt
+            </a>
+            <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none py-2 text-veryDarkBrown hover:text-green"
+              href="./mehr.html#kosten" role="menuitem">
+              Kosten
+            </a>
+          </div>
+        </button>
+      </div>
+
+      <!-- CTA BUTTON -->
+      <a class="btn, header__btn" href="./mehr.html">
+        TERMIN
+        <br />
         VEREINBAREN
       </a>
+
+      <!-- 
+          
+          
+                  NAV MENU (HANDY + TABLET)
+        
+        
+        -->
       <nav role="navigation">
         <div class="nav__kebab">
           <!--A fake / hidden checkbox is used as click receiver,
-       so you can use the :checked selector on it.-->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               so you can use the :checked selector on it.-->
           <input type="checkbox" />
           <!--Some spans to act as a kebab-->
           <span class="kebab__span kebab--top"></span>
@@ -81,167 +126,190 @@
           <span class="kebab__span kebab--bottom"></span>
           <span class="kebab__span kebab--hidden"></span>
           <ul class="menu">
-            <li class="menu__btn"><a href="#">Termin</a></li>
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="../html/uebermich.html">Über mich</a></li>
-            <li><a href="../html/angebot.html">Angebot</a></li>
-            <li><a href="../html/mehr.html">Mehr</a></li>
+            <li class="menu__btn ">
+              <a href="./mehr.html">Termin</a>
+            </li>
+            <li>
+              <a href="../../index.html">Home</a>
+            </li>
+            <li>
+              <a href="./uebermich.html">Über mich</a>
+            </li>
+            <li>
+              <a href="./angebot.html">Angebot</a>
+            </li>
+            <li>
+              <a href="./mehr.html">Mehr</a>
+            </li>
           </ul>
         </div>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <section>
-      <div class="contact-formular__wrap">
-        <div class="contact">
-          <div class="contact__wrap">
-            <div class="contact__mehr-seite">
-              <h2 class="mehr-seite--titel">MEHR...</h2>
-              <span class="mehr-seite--span"></span>
-            </div>
-            <h2 class="contact__titel kunst-font">Kontakt</h2>
-            <span class="contact__titel--span"></span>
-            <p>
-              Termine gerne telefonisch oder <br />
-              per Kontaktformular
-            </p>
-            <div class="contact__daten">
-              <h2 class="contact__name">Praxis Urvertrauen</h2>
-              <p class="contact__addresse">
-                Klaus-Rösner-Ring 29 <br />
-                25474 Hasloh
-              </p>
-              <p class="contact__tel">Tel. +49 175 299 1654</p>
-            </div>
+  <!-- 
+      
+      
+              CONTACT FORM
+    
+    
+    -->
+  <section>
+    <div class="contact-formular__wrap xl:24 2xl:pl-32 2xl:-pr-24">
+      <div class="contact 2xl:-pr-24">
+        <div class="contact__wrap">
+          <div class="contact__mehr-seite">
+            <h2 class="mehr-seite--titel">MEHR...</h2>
+            <span class="mehr-seite--span"></span>
           </div>
-        </div>
-        <div class="formular">
-          <div class="formular__wrap">
-            <form id="register-form">
-              <h2 class="formular__titel kunst-font">Kontaktformular</h2>
-              <div class="form--anrede">
-                <label
-                  id="anrede-label"
-                  for="anrede"
-                  type="text"
-                  aria-describedby="nameHint"
-                  >Anrede:</label
-                >
-                <select id="anrede" name="anrede" data-check="anrede">
-                  <option value="">Bitte wählen</option>
-                  <option value="dear individual">Liebes Individuum</option>
-                  <option value="dear person">Lieber Mensch</option>
-                  <option value="dear child">Liebes Kind</option>
-                  <option value="female">Frau</option>
-                  <option value="male">Herr</option>
-                </select>
-                <p id="anredeHint" class="error hidden" name="anrede">
-                  Wahl erforderlich!
-                </p>
-              </div>
-              <div class="input-wrapper">
-                <label for="name">Name</label>
-                <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  class="feedback-input"
-                  placeholder="Name"
-                />
-              </div>
-              <div class="input-wrapper">
-                <label for="email">E-Mail</label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  class="feedback-input"
-                  placeholder="E-Mail"
-                />
-              </div>
-              <div>
-                <label for="message">Nachricht</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  class="feedback-input"
-                  placeholder="Nachricht"
-                ></textarea>
-              </div>
-              <input type="submit" value="SUBMIT" />
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="anfahrt">
-        <div>
-          <h2 class="anfahrt__titel kunst-font">Anfahrt</h2>
-          <span class="anfahrt__titel--span"></span>
-          <p class="font-bold contact__address">
-            Klaus-Rösner-Ring 29 <br />
-            25474 Hasloh
+          <h2 class="contact__titel kunst-font">Kontakt</h2>
+          <span class="contact__titel--span"></span>
+          <p>
+            Termine gerne telefonisch oder
+            <br />
+            per Kontaktformular
           </p>
-          <p>die nächsten Haltestellen sind:</p>
-          <div>
-            <h2 class="font-bold">Bus 395</h2>
-            <p>Bahnhofstraße Hasloh</p>
-          </div>
-          <div>
-            <h2 class="font-bold">AKN</h2>
-            <p>Hasloh</p>
+          <div class="contact__daten">
+            <h2 class="contact__name">Praxis Urvertrauen</h2>
+            <p class="contact__addresse">
+              Klaus-Rösner-Ring 29
+              <br />
+              25474 Hasloh
+            </p>
+            <p id="formular" class="contact__tel">Tel. +49 175 299 1654</p>
           </div>
         </div>
+      </div>
+      <div class="formular">
+        <div class="formular__wrap">
+          <form id="register-form">
+            <h2 class="formular__titel kunst-font">Kontaktformular</h2>
+            <div class="form--anrede">
+              <label id="anrede-label" for="anrede" type="text" aria-describedby="nameHint">Anrede:</label>
+              <select id="anrede" name="anrede" data-check="anrede">
+                <option value="">Bitte wählen</option>
+                <option value="child">Kind</option>
+                <option value="female">Frau</option>
+                <option value="divers">Divers</option>
+                <option value="male">Herr</option>
+              </select>
+              <p id="anredeHint" class="error hidden" name="anrede">
+                Wahl erforderlich!
+              </p>
+            </div>
+            <div class="input-wrapper">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" class="feedback-input" placeholder="Name" />
+            </div>
+            <div class="input-wrapper">
+              <label for="email">E-Mail</label>
+              <input id="email" name="email" type="email" class="feedback-input" placeholder="E-Mail" />
+            </div>
+            <div>
+              <label for="message">Nachricht</label>
+              <textarea id="message" name="message" class="feedback-input" placeholder="Nachricht"></textarea>
+            </div>
+            <input type="submit" value="SUBMIT" />
+          </form>
+        </div>
+      </div>
+    </div>
 
+    <!-- 
+        
+        
+                DIRECTIONS
+      
+      
+      -->
+    <div id="anfahrt" class="anfahrt">
+      <div>
+        <h2 class="anfahrt__titel kunst-font">Anfahrt</h2>
+        <span class="anfahrt__titel--span"></span>
+        <p class="font-bold contact__address">
+          Klaus-Rösner-Ring 29
+          <br />
+          25474 Hasloh
+        </p>
+        <p>die nächsten Haltestellen sind:</p>
         <div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2362.5562279461806!2d9.917735577724319!3d53.690534172391146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b229c92a475a51%3A0xb7accde64336bf03!2sKlaus-R%C3%B6sner-Ring%2029%2C%2025474%20Hasloh!5e0!3m2!1sde!2sde!4v1684471917083!5m2!1sde!2sde"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <h2 class="font-bold">Bus 395</h2>
+          <p>Bahnhofstraße Hasloh</p>
+        </div>
+        <div>
+          <h2 class="font-bold">AKN</h2>
+          <p>Hasloh</p>
         </div>
       </div>
 
-      <div class="kosten">
-        <h2 class="kosten__titel kunst-font">Kosten</h2>
-        <p>Pro Termin ca. 50 Min. | 90€</p>
-        <p>
-          Jede weitere <b>halbe Stunde</b> <br class="md:hidden" />
-          im gleichem Termin | 50€
-        </p>
-        <p class="kosten__italics">
-          Bitte beachte, dass Urvertrauen eine Privatpraxis ist und die Kosten
-          selber zu tragen sind. Du kannst im Vorfeld bei Deiner Krankenkasse
-          anfragen, ob Kosten erstattet werden.
-        </p>
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2362.5562279461806!2d9.917735577724319!3d53.690534172391146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b229c92a475a51%3A0xb7accde64336bf03!2sKlaus-R%C3%B6sner-Ring%2029%2C%2025474%20Hasloh!5e0!3m2!1sde!2sde!4v1684471917083!5m2!1sde!2sde"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-    </section>
+    </div>
 
-    <footer class="footer">
-      <div class="footer__namen">
-        <h2 class="namen--praxis">
-          PRAXIS <br />
-          URVERTRAUEN
-        </h2>
-        <h2 class="namen--annes">Anne Grysar</h2>
-        <img src="../img/tree.svg" alt="bottom half of the logo" />
+    <!-- 
+        
+        
+                COSTS
+      
+      
+      -->
+    <div id="kosten" class="kosten">
+      <h2 class="kosten__titel kunst-font">Kosten</h2>
+      <p>Pro Termin ca. 50 Min. | 90€</p>
+      <p>
+        Jede weitere
+        <b>halbe Stunde</b>
+        <br class="md:hidden" />
+        im gleichem Termin | 50€
+      </p>
+      <p class="kosten__italics">
+        Bitte beachte, dass Urvertrauen eine Privatpraxis ist und die Kosten
+        selber zu tragen sind. Du kannst im Vorfeld bei Deiner Krankenkasse
+        anfragen, ob Kosten erstattet werden.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- 
+    
+    
+            FOOTER
+  
+  
+  -->
+
+  <footer class="footer">
+    <div class="footer__namen">
+      <h2 class="namen--praxis">
+        PRAXIS
+        <br />
+        URVERTRAUEN
+      </h2>
+      <h2 class="namen--annes">Anne Grysar</h2>
+      <img src="../img/tree.svg" alt="bottom half of the logo" />
+    </div>
+    <div class="footer__kontakt-daten">
+      <h2 class="namen--annes font-bold">ANNE GRYSAR</h2>
+      <p class="kontakt-daten--addresse">
+        Klaus-Rösner-Ring 29, 25474 Hasloh
+      </p>
+      <p class="kontakt-daten--telefon">Tel. +49 175 299 1654</p>
+    </div>
+    <div class="namen--rechtliches">
+      <div class="impressum-kontakt-datenschutz">
+        <a href="" class="impressum"> Impressum </a>
+        <a href="../html/mehr.html" class="kontakt"> Kontakt </a>
+        <a href="../html/datenschutz.html" class="datenschutz">
+          Datenschutz
+        </a>
       </div>
-      <div class="footer__kontakt-daten">
-        <h2 class="namen--annes font-bold">ANNE GRYSAR</h2>
-        <p class="kontakt-daten--addresse">
-          Klaus-Rösner-Ring 29, 25474 Hasloh
-        </p>
-        <p class="kontakt-daten--telefon">Tel. +49 175 299 1654</p>
-      </div>
-      <div class="namen--rechtliches">
-        <div class="impressum-kontakt-datenschutz">
-          <a href="" class="impressum"> Impressum </a>
-          <a href="../html/mehr.html" class="kontakt"> Kontakt </a>
-          <a href="../html/datenschutz.html" class="datenschutz">
-            Datenschutz
-          </a>
-        </div>
-        <p class="copyright">© 2023 | Urvertrauen | Schleswig-Holstein</p>
-      </div>
-    </footer>
-  </body>
+      <p class="copyright">© 2023 | Urvertrauen | Schleswig-Holstein</p>
+    </div>
+  </footer>
+</body>
+
 </html>
