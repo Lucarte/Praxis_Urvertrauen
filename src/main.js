@@ -117,11 +117,11 @@
 
 document.addEventListener('click', e => {
   const isDropdownButton = e.target.matches("[data-dropdown-button]");
-  const isDropdownMenu = e.target.matches("[data-dropdown]");
+  // const isDropdownMenu = e.target.matches("[data-dropdown]");
   if (!isDropdownButton && e.target.closest('[data-dropdown]') != null) return
 
   let currentDropdown
-  if (isDropdownButton){
+  if (isDropdownButton) {
     currentDropdown = e.target.closest('[data-dropdown]')
     e.target.children[0].classList.toggle('active');
   }
@@ -170,42 +170,42 @@ document.addEventListener("click", (e) => {
 
 // Hide logo when the nav menu is open - tell it to have opacity null when the nav menu is open
 
-  // Function to check if the navigation menu is open
-  function isNavMenuOpen() {
-    const navMenu = document.querySelector(".header__open-nav");
-    return navMenu.classList.contains("open");
+// Function to check if the navigation menu is open
+function isNavMenuOpen() {
+  const navMenu = document.querySelector(".header__open-nav");
+  return navMenu.classList.contains("open");
+}
+
+// Function to close the navigation menu
+function closeNavMenu() {
+  const navMenu = document.querySelector(".header__open-nav");
+  navMenu.classList.remove("open");
+}
+
+// Add a click event listener to the document
+document.addEventListener("click", (event) => {
+  const target = event.target;
+
+  if (!isNavMenuOpen()) {
+    // If the navigation menu is not open, return early
+    return;
   }
 
-  // Function to close the navigation menu
-  function closeNavMenu() {
-    const navMenu = document.querySelector(".header__open-nav");
-    navMenu.classList.remove("open");
+  // Check if the click target is outside the navigation menu
+  const isInMenu = target.closest(".header__open-nav");
+  if (!isInMenu) {
+    // Close the navigation menu
+    closeNavMenu();
   }
+});
 
-  // Add a click event listener to the document
-  document.addEventListener("click", (event) => {
-    const target = event.target;
+// Get the "Termin Vereinbaren" button
+const terminVereinbarenButton = document.querySelector(".header__btn");
 
-    if (!isNavMenuOpen()) {
-      // If the navigation menu is not open, return early
-      return;
-    }
-
-    // Check if the click target is outside the navigation menu
-    const isInMenu = target.closest(".header__open-nav");
-    if (!isInMenu) {
-      // Close the navigation menu
-      closeNavMenu();
-    }
-  });
-
-  // Get the "Termin Vereinbaren" button
-  const terminVereinbarenButton = document.querySelector(".header__btn");
-
-  // Add a click event listener to the "Termin Vereinbaren" button
-  terminVereinbarenButton.addEventListener("click", () => {
-    // Close the navigation menu if it's open
-    if (isNavMenuOpen()) {
-      closeNavMenu();
-    }
-  });
+// Add a click event listener to the "Termin Vereinbaren" button
+terminVereinbarenButton.addEventListener("click", () => {
+  // Close the navigation menu if it's open
+  if (isNavMenuOpen()) {
+    closeNavMenu();
+  }
+});
