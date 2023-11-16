@@ -18,9 +18,9 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="body-angebot flex flex-col min-h-screen items-center"></body>
-<header class="header z-40 h-28">
-  <a href="../../index.html" role="menuitem" class="logo z-50">
+<body class="flex flex-col items-center min-h-screen body-angebot"></body>
+<header class="z-40 header h-28">
+  <a href="../../index.html" role="menuitem" class="z-50 logo">
     <img src="../img/logo_foto.svg"
       alt="graphic design of a spiral simulating a tree trunk, origin to the second half of the design: a branch showing two leaves, one pointing right, the other left. Both in green, the trunk in brown." />
   </a>
@@ -33,7 +33,7 @@
   <div class="header__open-nav">
     <!-- Menu HOME -->
     <div data-dropdown class="dropdown">
-      <a data-dropdown-button class="header__open-nav--item flex flex-col mt-4 items-center" href="../../index.html"
+      <a data-dropdown-button class="flex flex-col items-center mt-4 header__open-nav--item" href="../../index.html"
         role="menuitem">
         Home
       </a>
@@ -41,11 +41,11 @@
 
     <!-- Menu ÜBER MICH -->
     <div data-dropdown class="dropdown">
-      <button data-dropdown-button class="header__open-nav--item flex flex-col mt-4 items-center">Über mich
-        <div class="dropdown-menu flex flex-col gap-2 p-4 bg-darkTurquis rounded-md shadow-shadowMenu w-36">
-          <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none p-2 hover:text-green"
+      <button data-dropdown-button class="flex flex-col items-center mt-4 header__open-nav--item">Über mich
+        <div class="flex flex-col gap-2 p-4 rounded-md dropdown-menu bg-darkTurquis shadow-shadowMenu w-36">
+          <a class="p-2 text-sm rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green"
             href="./uebermich.html" role="menuitem">Kennst du das?</a>
-          <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none p-2 hover:text-green"
+          <a class="p-2 text-sm rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green"
             href="./uebermich.html#qualifications" role="menuitem">Qualifications</a>
         </div>
       </button>
@@ -53,17 +53,18 @@
 
     <!-- Menu ANGEBOT -->
     <div data-dropdown class="dropdown">
-      <button data-dropdown-button class="link header__open-nav--item flex flex-col mt-4 items-center">Angebot
-        <div class="dropdown-menu flex flex-col gap-2 mt-0 p-4 bg-darkTurquis rounded-md shadow-shadowMenu w-36">
-          <a class="text-sm shadow-shadowSubmenu rounded-lg hover:shadow-none p-2 hover:text-green"
+      <button data-dropdown-button class="flex flex-col items-center mt-4 link header__open-nav--item">Angebot
+        <div
+          class="flex flex-col gap-2 p-4 mt-8 text-sm rounded-md dropdown-menu bg-darkTurquis shadow-shadowMenu w-36">
+          <a class="p-2 rounded-lg text-veryDarkBrown shadow-shadowSubmenu hover:shadow-none hover:text-green"
             href="./angebot.html" role="menuitem">
             Dialogische-<br>Körpertherapie
           </a>
-          <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none p-2 hover:text-green"
+          <a class="p-2 rounded-md text-veryDarkBrown shadow-shadowSubmenu hover:shadow-none hover:text-green"
             href="/src/html/angebot.html#hypnose" role="menuitem">
             Hypnose
           </a>
-          <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none p-2 hover:text-green"
+          <a class="p-2 rounded-md shadow-shadowSubmenu text-veryDarkBrown hover:shadow-none hover:text-green"
             href="/src/html/angebot.html#FAQ" role="menuitem">
             FAQ
           </a>
@@ -73,20 +74,20 @@
 
     <!-- Menu MEHR -->
     <div data-dropdown class="dropdown">
-      <button data-dropdown-button class="header__open-nav--item flex flex-col mt-4 items-center hover:text-green">
+      <button data-dropdown-button class="flex flex-col items-center mt-4 header__open-nav--item">
         Mehr
         <div
-          class="text-sm dropdown-menu flex flex-col gap-2 mt-0 p-4 bg-darkTurquis rounded-md shadow-shadowMenu w-36 ">
-          <a class="shadow-shadowSubmenu rounded-md hover:shadow-none py-2 hover:text-green" href="./mehr.html"
+          class="flex flex-col gap-2 p-4 mt-8 text-sm rounded-md dropdown-menu bg-darkTurquis shadow-shadowMenu w-36 ">
+          <a class="p-2 rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green" href="./mehr.html"
             role="menuitem">
             Kontakt
           </a>
-          <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none py-2 hover:text-green"
-            href="./mehr.html#anfahrt" role="menuitem">
+          <a class="p-2 rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green" href="./mehr.html#anfahrt"
+            role="menuitem">
             Anfahrt
           </a>
-          <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none py-2 hover:text-green"
-            href="./mehr.html#kosten" role="menuitem">
+          <a class="p-2 rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green" href="./mehr.html#kosten"
+            role="menuitem">
             Kosten
           </a>
         </div>
@@ -136,24 +137,24 @@
                                                   SECTION ONE
    -->
 
-<section class="section__one w-screen bg-gradient-to-r from-darkTurquis to-lightTurquis lg:flex flex-row mt-24">
+<section class="flex-row w-screen mt-24 section__one bg-gradient-to-r from-darkTurquis to-lightTurquis lg:flex">
   <div class="hidden lg:flex relative items-center bg-darkBrown w-[25%] xl:w-[30%] min-[1700px]:w-[20%]">
     <img class="absolute -right-16 max-w-[250px] xl:max-w-[350px]" src="../img/mutter_kind.png"
       alt="Picture of a mother (waist down dressed with kakhi pants and a fall jacket) holding both hands of a todler right in front of her as if giving his second steps">
   </div>
   <div
     class="pt-16 pb-20 md:px-10 lg:py-0 lg:mt-[6%] lg:mb-[9%] lg:h-full lg:w-[75%] xl:pt-16 xl:mx-10 xl:px-16 xl:w-[70%] min-[1700px]:w-[80%] ">
-    <h2 class="sm:mt-0 ml-12 font-bold text-darkBrown mb-6 text-lg lg:hidden">ANGEBOT</h2>
+    <h2 class="mb-6 ml-12 text-lg font-bold sm:mt-0 text-darkBrown lg:hidden">ANGEBOT</h2>
     <span class="block w-[5.5rem] h-[.2rem] bg-lightBrown rounded-lg -mt-4 mb-14 ml-16 lg:hidden"></span>
-    <div class="flex flex-col items-center mb-6  text-darkBrown font-bold font-titel ">
+    <div class="flex flex-col items-center mb-6 font-bold text-darkBrown font-titel ">
       <h2 class="hidden lg:flex lg:text-[23px] xl:text-2xl">Psychotherapie - kennt man...</h2>
       <h2 class="hidden lg:flex mb-16 lg:text-[23px] xl:text-2xl">Aber Dialogische Körpertherapie - Was ist das?<span
           class="absolute rounded-lg h-1 w-[29rem] bg-lightBrown mt-12 ml-16"></span>
       </h2>
     </div>
-    <h2 class="font-titel font-bold text-center text-2xl mb-6 -mt-6 text-darkBrown lg:hidden">Dialogische Körpertherapie
+    <h2 class="mb-6 -mt-6 text-2xl font-bold text-center font-titel text-darkBrown lg:hidden">Dialogische Körpertherapie
     </h2>
-    <div class="h-96 overflow-scroll mx-10 text-darkBrown">
+    <div class="mx-10 overflow-scroll h-96 text-darkBrown">
       <p class="text-center leading-8 lg:text-[17px]">Es ist wie ein Wunder: Der Körper ist ein riesengroßer Speicher
         voller Erinnerungen und Wissen.
         Insbesondere schlechte Erfahrungen werden abgespeichert und oft erst einmal in Spannungen festgehalten. Das ist
@@ -204,13 +205,13 @@
   </div>
   <div
     class="pt-16 pb-20 md:px-16 lg:py-0 lg:mt-[6%] lg:mb-[9%] lg:h-full lg:w-[75%] xl:pt-16 xl:mx-10 xl:px-16 xl:w-[70%] min-[1700px]:w-[80%]">
-    <div class="flex flex-col items-center mb-6  text-darkBrown font-bold font-titel lg:text-veryDarkBrown ">
+    <div class="flex flex-col items-center mb-6 font-bold text-darkBrown font-titel lg:text-veryDarkBrown ">
       <h2 class="hidden lg:flex mb-8 lg:text-[23px] xl:text-2xl">Hypnose<span
           class="absolute rounded-lg h-[.2rem] w-[4.5rem] bg-darkTurquis mt-10 ml-[1.7rem]"></span>
       </h2>
     </div>
-    <h2 class="font-titel font-bold text-center text-2xl mb-6 -mt-6 text-veryDarkBrown lg:hidden">Hypnose</h2>
-    <div class="h-96 overflow-scroll px-10 text-veryDarkBrown">
+    <h2 class="mb-6 -mt-6 text-2xl font-bold text-center font-titel text-veryDarkBrown lg:hidden">Hypnose</h2>
+    <div class="px-10 overflow-scroll h-96 text-veryDarkBrown">
 
       <div class="flex flex-col text-center leading-8 lg:text-[17px]">
         <p class="pr-10">Hypnose – gackern wie ein Huhn…</p>
@@ -250,19 +251,19 @@
       </p>
     </div>
   </div>
-  <div class="overflow-hidden w-screen lg:hidden lg:w-0">
+  <div class="w-screen overflow-hidden lg:hidden lg:w-0">
     <img src="../img/kugel.png" alt="Bild von einer transparenten Kugel, die Bäume reflektiert"
       class="relative scale-125 min-w-full md:scale-[60%] md:-mt-24 lg:-z-10 lg:h-0">
 
   </div>
 </section>
 
-<!-- <section class="section__two w-screen bg-lightBrown">
+<!-- <section class="w-screen section__two bg-lightBrown">
                                                   <div class="pt-20 pb-12 md:px-20 lg:pt-56 lg:px-36 lg:431 lg:first-line:pb-96 xl:px-64 2xl:px-80">
-                                                    <h2 class="hypnose__titel text-2xl text-center  mb-6 -mt-6  text-veryDarkBrown font-bold font-titel">Hypnose</h2>
-                                                    <span class="h-0 lg:block rounded-lg lg:h-1 w-36 bg-darkTurquis -mt-2 mb-16"></span>
-                                                    <div class="h-96 overflow-scroll">
-                                                      <p class=" text-center leading-8 mx-8"></p>
+                                                    <h2 class="mb-6 -mt-6 text-2xl font-bold text-center hypnose__titel text-veryDarkBrown font-titel">Hypnose</h2>
+                                                    <span class="h-0 mb-16 -mt-2 rounded-lg lg:block lg:h-1 w-36 bg-darkTurquis"></span>
+                                                    <div class="overflow-scroll h-96">
+                                                      <p class="mx-8 leading-8 text-center "></p>
                                                     </div>
                                                   </div>
                                                 </section> -->
@@ -274,7 +275,7 @@
                                               
                                                  -->
 
-<section id="FAQ" class="section__one w-screen bg-gradient-to-r from-darkTurquis to-lightTurquis lg:flex flex-row">
+<section id="FAQ" class="flex-row w-screen section__one bg-gradient-to-r from-darkTurquis to-lightTurquis lg:flex">
   <div class="hidden lg:flex relative items-center bg-darkBrown w-[25%] xl:w-[30%] min-[1700px]:w-[20%]">
     <img class="absolute -right-16 max-w-[250px] xl:max-w-[350px]" src="../img/fuss.png"
       alt="Picture of a hand of a mother maybe, holding a barefoot of a baby">
@@ -282,21 +283,21 @@
   <div
     class="pt-16 pb-20 md:px-10 lg:py-0 lg:mt-[6%] lg:mb-[9%] lg:h-full lg:w-[75%] xl:pt-0 xl:mx-10 xl:px-16 xl:w-[70%] min-[1700px]:w-[80%] ">
 
-    <div class="flex flex-col items-center mb-6  text-darkBrown font-bold font-titel 2xl:mb-16">
+    <div class="flex flex-col items-center mb-6 font-bold text-darkBrown font-titel 2xl:mb-16">
       <h2 class="hidden lg:flex mb-6 lg:text-[23px] xl:text-2xl">F A Q<span
-          class="absolute rounded-lg h-1 w-14 bg-lightBrown mt-10 ml-5"></span>
+          class="absolute h-1 mt-10 ml-5 rounded-lg w-14 bg-lightBrown"></span>
       </h2>
     </div>
-    <h2 class="font-titel font-bold text-center text-2xl mb-6 -mt-6  text-darkBrown lg:hidden">F A Q</h2>
+    <h2 class="mb-6 -mt-6 text-2xl font-bold text-center font-titel text-darkBrown lg:hidden">F A Q</h2>
     <div class="h-96 overflow-scroll mx-16 text-darkBrown text-left leading-8 lg:mx-0 lg:px-20 xl:px-10 xl:h-[35rem]">
-      <h3 class="font-bold mt-4">
+      <h3 class="mt-4 font-bold">
         Wie lange dauert ein Termin und welche Kosten kommen auf mich zu?
       </h3>
       <p class="">
         Ein Termin von ca. 50 Minuten berechne ich mit 90€.
         Wenn wir länger brauchen sollten für eine Behandlung, kostet jede weitere halbe Stunde 50 €.
       </p>
-      <h3 class="font-bold mt-4">
+      <h3 class="mt-4 font-bold">
         Übernimmt die Krankenkasse die Kosten?
       </h3>
       <p class="">
@@ -305,7 +306,7 @@
         Privatkassen ist es auch immer ratsam, vorher abzuklären, welche Kosten übernommen werden und was man selber
         übernehmen muss.
       </p>
-      <h3 class="font-bold mt-4">
+      <h3 class="mt-4 font-bold">
         Was ist der Unterschied zu Gesprächstherapie oder Verhaltenstherapie?
       </h3>
       <p class="">
@@ -315,14 +316,14 @@
         Nervensystem. Wenn Du durch besondere Erfahrungen keinen Körperkontakt möchtest, ist es Ziel der Therapie, das
         wieder zuzulassen.
       </p>
-      <h3 class="font-bold mt-4">
+      <h3 class="mt-4 font-bold">
         Muss ich mich in der Therapie entkleiden?
       </h3>
       <p class="">
         Nicht unbedingt. Für manche Techniken wie z.B. Massagen ist direkter Hautkontakt wünschenswert. Wir können das
         aber gerne besprechen, wenn es für Dich ein Problem sein sollte.
       </p>
-      <h3 class="font-bold mt-4">
+      <h3 class="mt-4 font-bold">
         Was ist, wenn ich Angst habe vor der Therapie?
       </h3>
       <p class="">
@@ -337,8 +338,8 @@
 
 <!-- <section class="section__three bg-darkTurquis">
   <div class="pt-16 pb-10 md:px-20 lg:pt-56 lg:px-36 lg:431 lg:first-line:pb-96 xl:px-64 2xl:px-80">
-    <h2 class="text-center text-2xl mb-0 lg:mb-8 -mt-6  text-veryDarkBrown font-bold">F A Q</h2>
-    <span class="h-0 lg:block rounded-lg lg:h-1 w-36 bg-darkTurquis -mt-2 mb-16"></span>
+    <h2 class="mb-0 -mt-6 text-2xl font-bold text-center lg:mb-8 text-veryDarkBrown">F A Q</h2>
+    <span class="h-0 mb-16 -mt-2 rounded-lg lg:block lg:h-1 w-36 bg-darkTurquis"></span>
     <div class="pt-4 overflow-scroll">
     </div>
   </div>
@@ -353,7 +354,7 @@ FOOTER
  -->
 
 
-<footer class="mt-auto w-screen">
+<footer class="w-screen mt-auto">
   <div class="footer__namen">
     <h2 class="namen--praxis">
       PRAXIS
@@ -366,7 +367,7 @@ FOOTER
     <img src="../img/tree.svg" alt="bottom half of the logo">
   </div>
   <div class="footer__kontakt-daten">
-    <h2 class="namen--annes font-bold">
+    <h2 class="font-bold namen--annes">
       ANNE GRYSAR
     </h2>
     <p class="kontakt-daten--addresse">

@@ -1,17 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html', './src/html/mehr.html', './src/html/angebot.html', './src/html/uebermich.html'],
+  content: [ './index.html', './src/html/mehr.html', './src/html/angebot.html', './src/html/uebermich.html' ],
   // content: ['./src/*.html'],
   theme: {
     fontFamily: {
-      'titel': ['felt-tip-roman'],
-      'sans': ['kaisei-opti', 'nunito', 'Helvetica']
+      'titel': [ 'felt-tip-roman' ],
+      'sans': [ 'kaisei-opti', 'nunito', 'Helvetica' ]
     },
     extend: {
       boxShadow: {
+        'shadowHeader': '1px 3px 10px rgba(168, 187, 182, 1)',
         'shadowMenu': '1px 3px -1px rgba(157, 157, 182, .6)',
         'shadowSubmenu': '1px 3px 15px rgba(168, 187, 182, .6)'
       }
+    },
+    fontWeight: {
+      'light': 300,
+      'regular': 400,
+      'bold': 700,
     },
     colors: {
       veryDarkBrown: '#412f20',

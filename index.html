@@ -17,176 +17,182 @@
 </head>
 
 <body>
-  <header class="header z-40 h-[8rem]">
-    <a href="./index.html" role="menuitem" class="logo z-50">
-      <img src="./src/img/logo_foto.svg"
-        alt="graphic design of a spiral simulating a tree trunk, origin to the second half of the design: a branch showing two leaves, one pointing right, the other left. Both in green, the trunk in brown." />
-    </a>
-    <h2 class="header__name">
-      PRAXIS
-      <br />
-      URVERTRAUEN
-    </h2>
-    <div class="header__open-nav">
-      <!-- Menu HOME -->
-      <div data-dropdown class="dropdown">
-        <a data-dropdown-button class="header__open-nav--item text-green flex flex-col mt-4 items-center"
-          href="./index.html" role="menuitem">
-          Home
-        </a>
-      </div>
 
-      <!-- Menu ÜBER MICH -->
-      <div data-dropdown class="dropdown">
-        <button data-dropdown-button class="header__open-nav--item flex flex-col mt-4 items-center">
-          Über mich
-          <div class="dropdown-menu flex flex-col gap-2 p-4 bg-darkTurquis rounded-md shadow-shadowMenu w-36">
-            <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none p-2 hover:text-green"
-              href="./src/html/uebermich.html" role="menuitem">Kennst du das?</a>
-            <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none p-2 hover:text-green"
-              href="./src/html/uebermich.html#qualifications" role="menuitem">Qualifications</a>
-          </div>
-        </button>
-      </div>
+  <body class="grid font-sans text-base font-light bg-darkTurquis text-veryDarkBrown">
+    <header
+      class="header fixed w-full flex bg-darkTurquis justify-start items-center pt-2 pr-[.1rem] pb-[.3rem] pl-0 shadow-shadowHeader md:justify-between lg:justify-center z-40 h-[8rem]">
 
-      <!-- Menu ANGEBOT -->
-      <div data-dropdown class="dropdown">
-        <button data-dropdown-button class="header__open-nav--item flex flex-col mt-4 items-center">
-          Angebot
-          <div class="dropdown-menu flex flex-col gap-2 mt-0 p-4 bg-darkTurquis rounded-md shadow-shadowMenu w-36">
-            <a class="text-sm shadow-shadowSubmenu rounded-lg hover:shadow-none p-2 hover:text-green"
-              href="./src/html/angebot.html" role="menuitem">
-              Dialoggische-<br>Körpertherapie
-            </a>
-            <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none p-2 hover:text-green"
-              href="./src/html/angebot.html#hypnose" role="menuitem">
-              Hypnose
-            </a>
-            <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none p-2 hover:text-green"
-              href="./src/html/angebot.html#FAQ" role="menuitem">
-              FAQ
-            </a>
-          </div>
-        </button>
-      </div>
-
-      <!-- Menu MEHR -->
-      <div data-dropdown class="dropdown">
-        <button data-dropdown-button class="header__open-nav--item flex flex-col mt-4 items-center">Mehr
-          <div
-            class="text-sm dropdown-menu flex flex-col gap-2 mt-0 p-4 bg-darkTurquis rounded-md shadow-shadowMenu w-36 ">
-            <a class="shadow-shadowSubmenu rounded-md hover:shadow-none py-2 hover:text-green"
-              href="./src/html/mehr.html" role="menuitem">
-              Kontakt
-            </a>
-            <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none py-2 hover:text-green"
-              href="./src/html/mehr.html#anfahrt" role="menuitem"> Anfahrt
-            </a>
-            <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none py-2 hover:text-green"
-              href="./src/html/mehr.html#kosten" role="menuitem">
-              Kosten
-            </a>
-          </div>
-        </button>
-      </div>
-
-      <!-- CTA BUTTON -->
-      <a class="btn, header__btn" href="./src/html/mehr.html">
-        TERMIN
-        <br />
-        VEREINBAREN
+      <a href="./index.html" role="menuitem" class="z-50 logo">
+        <img src="./src/img/logo_foto.svg"
+          alt="graphic design of a spiral simulating a tree trunk, origin to the second half of the design: a branch showing two leaves, one pointing right, the other left. Both in green, the trunk in brown." />
       </a>
-      <nav role="navigation">
-        <div class="nav__kebab">
-          <!--A fake / hidden checkbox is used as click receiver, so you can use the :checked selector on it.-->
-          <input type="checkbox" />
-          <!--Some spans to act as a kebab-->
-          <span class="kebab__span kebab--top"></span>
-          <span class="kebab__span kebab--middle"></span>
-          <span class="kebab__span kebab--bottom"></span>
-          <span class="kebab__span kebab--hidden"></span>
-          <ul class="menu">
-            <li class="menu__btn">
-              <a href="./src/html/mehr.html#formular">Termin</a>
-            </li>
-            <li>
-              <a href="./index.html">Home</a>
-            </li>
-            <li>
-              <a href="./src/html/uebermich.html">Über mich</a>
-            </li>
-            <li>
-              <a href="./src/html/angebot.html">Angebot</a>
-            </li>
-            <li>
-              <a href="./src/html/mehr.html">Mehr</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-
-  <main class="lg:h-[calc(100vh-7rem)]">
-    <div class="main__hero">
-      <div class="main__hero--img">
-        <div class="main__hero--intro">
-          <div class="intro-praxisname">
-            <h2>
-              PRIVATPRAXIS
-              <br />
-              FÜR PSYCHOTHERAPIE
-            </h2>
-            <span class="praxisname-span"></span>
-          </div>
-          <div class="intro-name">Anne Grysar</div>
-          <div class="intro-text">
-            Heilpraktikerin für Psychotherapie
-            <br />
-            Mitglied im Verband - Osteopathie
-            <br />
-            B.A. Physiotherapie
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-
-
-  <footer class="footer__index">
-    <div class="footer__namen">
-      <h2 class="namen--praxis">
+      <h2 class="header__name">
         PRAXIS
         <br />
         URVERTRAUEN
       </h2>
-      <h2 class="namen--annes">Anne Grysar</h2>
-      <img src="./src/img/tree.svg" alt="bottom half of the logo" />
-    </div>
-    <div class="footer__kontakt-daten">
-      <h2 class="namen--annes font-bold">ANNE GRYSAR</h2>
-      <p class="kontakt-daten--addresse">
-        Klaus-Rösner-Ring 29, 25474 Hasloh
-      </p>
-      <p class="kontakt-daten--telefon">Tel. +49 175 299 1654</p>
-    </div>
-    <div class="namen--rechtliches">
-      <div class="impressum-kontakt-datenschutz">
-        <a href="" class="impressum">
-          Impressum
+      <div class="header__open-nav">
+        <!-- Menu HOME -->
+        <div data-dropdown class="relative translate-y-0 dropdown min-w-fit active:opacity-100">
+          <a data-dropdown-button class="flex flex-col items-center mt-4 header__open-nav--item text-green"
+            href="./index.html" role="menuitem">
+            Home
+          </a>
+        </div>
+
+        <!-- Menu ÜBER MICH -->
+        <div data-dropdown class="relative translate-y-0 dropdown min-w-fit active:opacity-100">
+          <button data-dropdown-button class="flex flex-col items-center mt-4 header__open-nav--item">
+            Über mich
+            <div
+              class="flex flex-col gap-2 p-4 rounded-md dropdown-menu absolute mt-8 opacity-0 -translate-y-[5px] transition-opacity delay-300 ease-in-out bg-darkTurquis shadow-shadowMenu w-36">
+              <a class="p-2 text-sm rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green"
+                href="./src/html/uebermich.html" role="menuitem">Kennst du das?</a>
+              <a class="p-2 text-sm rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green"
+                href="./src/html/uebermich.html#qualifications" role="menuitem">Qualifications</a>
+            </div>
+          </button>
+        </div>
+
+        <!-- Menu ANGEBOT -->
+        <div data-dropdown class="relative translate-y-0 dropdown min-w-fit active:opacity-100">
+          <button data-dropdown-button class="flex flex-col items-center mt-4 header__open-nav--item">
+            Angebot
+            <div
+              class="flex flex-col gap-2 p-4 mt-8 rounded-md dropdown-menu absolute opacity-0 -translate-y-[5px] transition-opacity delay-300 ease-in-out bg-darkTurquis shadow-shadowMenu w-36">
+              <a class="p-2 text-sm rounded-lg shadow-shadowSubmenu hover:shadow-none hover:text-green"
+                href="./src/html/angebot.html" role="menuitem">
+                Dialoggische-<br>Körpertherapie
+              </a>
+              <a class="p-2 text-sm rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green"
+                href="./src/html/angebot.html#hypnose" role="menuitem">
+                Hypnose
+              </a>
+              <a class="p-2 text-sm rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green"
+                href="./src/html/angebot.html#FAQ" role="menuitem">
+                FAQ
+              </a>
+            </div>
+          </button>
+        </div>
+
+        <!-- Menu MEHR -->
+        <div data-dropdown class="relative translate-y-0 dropdown min-w-fit active:opacity-100">
+          <button data-dropdown-button class="flex flex-col items-center mt-4 header__open-nav--item">Mehr
+            <div
+              class="flex flex-col gap-2 p-4 mt-8 text-sm rounded-md dropdown-menu absolute opacity-0 -translate-y-[5px] transition-opacity delay-300 ease-in-out bg-darkTurquis shadow-shadowMenu w-36 ">
+              <a class="py-2 rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green"
+                href="./src/html/mehr.html" role="menuitem">
+                Kontakt
+              </a>
+              <a class="py-2 text-sm rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green"
+                href="./src/html/mehr.html#anfahrt" role="menuitem"> Anfahrt
+              </a>
+              <a class="py-2 text-sm rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green"
+                href="./src/html/mehr.html#kosten" role="menuitem">
+                Kosten
+              </a>
+            </div>
+          </button>
+        </div>
+
+        <!-- CTA BUTTON -->
+        <a class="btn, header__btn" href="./src/html/mehr.html">
+          TERMIN
+          <br />
+          VEREINBAREN
         </a>
-        <a href="./src/html/mehr.html" class="kontakt">
-          Kontakt
-        </a>
-        <a href="" class="datenschutz">
-          Datenschutz
-        </a>
+        <nav role="navigation">
+          <div class="nav__kebab">
+            <!--A fake / hidden checkbox is used as click receiver, so you can use the :checked selector on it.-->
+            <input type="checkbox" />
+            <!--Some spans to act as a kebab-->
+            <span class="kebab__span kebab--top"></span>
+            <span class="kebab__span kebab--middle"></span>
+            <span class="kebab__span kebab--bottom"></span>
+            <span class="kebab__span kebab--hidden"></span>
+            <ul class="menu">
+              <li class="menu__btn">
+                <a href="./src/html/mehr.html#formular">Termin</a>
+              </li>
+              <li>
+                <a href="./index.html">Home</a>
+              </li>
+              <li>
+                <a href="./src/html/uebermich.html">Über mich</a>
+              </li>
+              <li>
+                <a href="./src/html/angebot.html">Angebot</a>
+              </li>
+              <li>
+                <a href="./src/html/mehr.html">Mehr</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-      <p class="copyright">© 2023 | Urvertrauen | Schleswig-Holstein</p>
-    </div>
-  </footer>
-</body>
+    </header>
+
+
+    <main class="lg:h-[calc(100vh-7rem)]">
+      <div class="main__hero">
+        <div class="main__hero--img">
+          <div class="main__hero--intro">
+            <div class="intro-praxisname">
+              <h2>
+                PRIVATPRAXIS
+                <br />
+                FÜR PSYCHOTHERAPIE
+              </h2>
+              <span class="praxisname-span"></span>
+            </div>
+            <div class="intro-name">Anne Grysar</div>
+            <div class="intro-text">
+              Heilpraktikerin für Psychotherapie
+              <br />
+              Mitglied im Verband - Osteopathie
+              <br />
+              B.A. Physiotherapie
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+    <footer class="footer__index">
+      <div class="footer__namen">
+        <h2 class="namen--praxis">
+          PRAXIS
+          <br />
+          URVERTRAUEN
+        </h2>
+        <h2 class="namen--annes">Anne Grysar</h2>
+        <img src="./src/img/tree.svg" alt="bottom half of the logo" />
+      </div>
+      <div class="footer__kontakt-daten">
+        <h2 class="font-bold namen--annes">ANNE GRYSAR</h2>
+        <p class="kontakt-daten--addresse">
+          Klaus-Rösner-Ring 29, 25474 Hasloh
+        </p>
+        <p class="kontakt-daten--telefon">Tel. +49 175 299 1654</p>
+      </div>
+      <div class="namen--rechtliches">
+        <div class="impressum-kontakt-datenschutz">
+          <a href="" class="impressum">
+            Impressum
+          </a>
+          <a href="./src/html/mehr.html" class="kontakt">
+            Kontakt
+          </a>
+          <a href="" class="datenschutz">
+            Datenschutz
+          </a>
+        </div>
+        <p class="copyright">© 2023 | Urvertrauen | Schleswig-Holstein</p>
+      </div>
+    </footer>
+  </body>
 
 </html>
 </body>

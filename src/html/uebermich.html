@@ -17,9 +17,9 @@
   <script src="../main.js" defer type="module"></script>
 </head>
 
-<body class="body-uebermich flex flex-col min-h-screen items-center">
-  <header class="header z-40 h-28">
-    <a href="../../index.html" role="menuitem" class="logo z-40">
+<body class="flex flex-col items-center min-h-screen body-uebermich">
+  <header class="z-40 header h-28">
+    <a href="../../index.html" role="menuitem" class="z-40 logo">
       <img src="../img/logo_foto.svg"
         alt="graphic design of a spiral simulating a tree trunk, origin to the second half of the design: a branch showing two leaves, one pointing right, the other left. Both in green, the trunk in brown." />
     </a>
@@ -31,7 +31,7 @@
     <div class="header__open-nav">
       <!-- Menu HOME -->
       <div data-dropdown class="dropdown">
-        <a data-dropdown-button class="header__open-nav--item flex flex-col mt-4 items-center" href="../../index.html"
+        <a data-dropdown-button class="flex flex-col items-center mt-4 header__open-nav--item" href="../../index.html"
           role="menuitem">
           Home
         </a>
@@ -39,12 +39,12 @@
 
       <!-- Menu ÜBER MICH -->
       <div data-dropdown class="dropdown">
-        <button data-dropdown-button class="link header__open-nav--item flex flex-col mt-4 items-center">Über
+        <button data-dropdown-button class="flex flex-col items-center mt-4 link header__open-nav--item">Über
           mich
-          <div class="dropdown-menu flex flex-col gap-2 p-4 bg-darkTurquis rounded-md shadow-shadowMenu w-36">
-            <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none text-veryDarkBrown p-2 hover:text-green"
+          <div class="flex flex-col gap-2 p-4 rounded-md dropdown-menu bg-darkTurquis shadow-shadowMenu w-36">
+            <a class="p-2 text-sm rounded-md shadow-shadowSubmenu hover:shadow-none text-veryDarkBrown hover:text-green"
               href="./uebermich.html" role="menuitem">Kennst du das?</a>
-            <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none p-2 text-veryDarkBrown hover:text-green"
+            <a class="p-2 text-sm rounded-md shadow-shadowSubmenu hover:shadow-none text-veryDarkBrown hover:text-green"
               href="./uebermich.html#qualifications" role="menuitem">Qualifications</a>
           </div>
         </button>
@@ -52,18 +52,18 @@
 
       <!-- Menu ANGEBOT -->
       <div data-dropdown class="dropdown">
-        <button data-dropdown-button class="header__open-nav--item flex flex-col mt-4 items-center">
+        <button data-dropdown-button class="flex flex-col items-center mt-4 header__open-nav--item">
           Angebot
-          <div class="dropdown-menu flex flex-col gap-2 mt-0 p-4 bg-darkTurquis rounded-md shadow-shadowMenu w-36">
-            <a class="text-sm shadow-shadowSubmenu rounded-lg hover:shadow-none p-2 hover:text-green"
+          <div class="flex flex-col gap-2 p-4 mt-8 rounded-md dropdown-menu bg-darkTurquis shadow-shadowMenu w-36">
+            <a class="p-2 text-sm rounded-lg shadow-shadowSubmenu hover:shadow-none hover:text-green"
               href="./angebot.html" role="menuitem">
               Dialoggische-<br>Körpertherapie
             </a>
-            <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none p-2 hover:text-green"
+            <a class="p-2 text-sm rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green"
               href="./angebot.html#hypnose" role="menuitem">
               Hypnose
             </a>
-            <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none p-2 hover:text-green"
+            <a class="p-2 text-sm rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green"
               href="./angebot.html#FAQ" role="menuitem">
               FAQ
             </a>
@@ -73,19 +73,19 @@
 
       <!-- Menu MEHR -->
       <div data-dropdown class="dropdown">
-        <button data-dropdown-button class="header__open-nav--item flex flex-col mt-4 items-center">
+        <button data-dropdown-button class="flex flex-col items-center mt-4 header__open-nav--item">
           Mehr
           <div
-            class="text-sm dropdown-menu flex flex-col gap-2 mt-0 p-4 bg-darkTurquis rounded-md shadow-shadowMenu w-36 ">
-            <a class="shadow-shadowSubmenu rounded-md hover:shadow-none py-2 hover:text-green" href="./mehr.html"
+            class="flex flex-col gap-2 p-4 mt-8 text-sm rounded-md dropdown-menu bg-darkTurquis shadow-shadowMenu w-36 ">
+            <a class="py-2 rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green" href="./mehr.html"
               role="menuitem">
               Kontakt
             </a>
-            <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none py-2 hover:text-green"
+            <a class="py-2 text-sm rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green"
               href="./mehr.html#anfahrt" role="menuitem">
               Anfahrt
             </a>
-            <a class="text-sm shadow-shadowSubmenu rounded-md hover:shadow-none py-2 hover:text-green"
+            <a class="py-2 text-sm rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green"
               href="./mehr.html#kosten" role="menuitem">
               Kosten
             </a>
@@ -135,10 +135,10 @@
   <section class="section__one">
     <div
       class="pt-40 px-10 pb-10 md:px-20 lg:pt-64 lg:px-36 lg:431 lg:first-line:pb-96 xl:px-64 2xl:px-80 lg:h-[60rem]">
-      <h2 class="uebermich__titel font-bold mb-12 text-lg lg:hidden">ÜBER MICH</h2>
+      <h2 class="mb-12 text-lg font-bold uebermich__titel lg:hidden">ÜBER MICH</h2>
       <span class="uebermich__titel--span lg:opacity-0"></span>
-      <h2 class="section__titel text-center text-2xl mb-2  text-veryDarkBrown font-bold">
-        Kennst du das ?<span class="absolute h-0 rounded-lg lg:h-1 w-36 bg-darkTurquis mt-12 -ml-24 "></span></h2>
+      <h2 class="mb-2 text-2xl font-bold text-center section__titel text-veryDarkBrown">
+        Kennst du das ?<span class="absolute h-0 mt-12 -ml-24 rounded-lg lg:h-1 w-36 bg-darkTurquis "></span></h2>
 
       <div class="h-80 lg:h-[26rem] pt-6 overflow-scroll">
         <p class="text-center 2xl:text-[1.05rem] leading-[2.3rem] 2xl:leading-[3rem]">Du triffst einen Menschen,
@@ -177,19 +177,19 @@
     <div class="overflow-hidden lg:hidden lg:w-0">
       <img src="../img/kid_on_shoulders.png"
         alt="photo of a kid on the shoulders of a parent, seen from the back, in the forest."
-        class="mobile__img relative scale-125 min-w-full lg:-z-10 lg:h-0">
+        class="relative min-w-full scale-125 mobile__img lg:-z-10 lg:h-0">
     </div>
   </section>
 
-  <section id="qualifications" class="section__two m-8 max-w-3xl">
+  <section id="qualifications" class="max-w-3xl m-8 section__two">
     <div class="mb-8">
-      <h2 class="font-titel text-2xl font-bold mt-10 mb-4 text-center">Qualifikationen</h2>
-      <p class="text-center font-medium mb-10">Neben meiner durchgängigen physiotherapeutischen Arbeit mit
+      <h2 class="mt-10 mb-4 text-2xl font-bold text-center font-titel">Qualifikationen</h2>
+      <p class="mb-10 font-medium text-center">Neben meiner durchgängigen physiotherapeutischen Arbeit mit
         Schwerpinknten in
         der
         Orthopädie und Neurologie
         kann ich unter anderem folgendes nachweisen:</p>
-      <ul class="flex flex-col gap-6 ml-4 md:ml-12 text-left">
+      <ul class="flex flex-col gap-6 ml-4 text-left md:ml-12">
         <li>
           <span>Ausbildung
             <b class="font-bold">Dialogische Körperpsychotherapie</b>
@@ -256,7 +256,7 @@
 
 </html>
 </section>
-<footer class="mt-auto w-screen">
+<footer class="w-screen mt-auto">
   <div class="footer__namen">
     <h2 class="namen--praxis">
       PRAXIS
@@ -269,7 +269,7 @@
     <img src="../img/tree.svg" alt="bottom half of the logo">
   </div>
   <div class="footer__kontakt-daten">
-    <h2 class="namen--annes font-bold">
+    <h2 class="font-bold namen--annes">
       ANNE GRYSAR
     </h2>
     <p class="kontakt-daten--addresse">
