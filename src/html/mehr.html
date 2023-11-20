@@ -50,7 +50,8 @@
       <div data-dropdown class="dropdown">
         <button data-dropdown-button class="flex flex-col items-center mt-4 header__open-nav--item">
           Über mich
-          <div class="flex flex-col gap-2 p-4 rounded-md dropdown-menu bg-darkTurquis shadow-shadowMenu w-36">
+          <div data-dropdown-menu
+            class="flex flex-col gap-2 p-4 rounded-md dropdown-menu bg-darkTurquis shadow-shadowMenu w-36">
             <a class="p-2 text-sm rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green"
               href="./uebermich.html" role="menuitem">Kennst du das?</a>
             <a class="p-2 text-sm rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green"
@@ -63,7 +64,8 @@
       <div data-dropdown class="dropdown">
         <button data-dropdown-button class="flex flex-col items-center mt-4 header__open-nav--item">
           Angebot
-          <div class="flex flex-col gap-2 p-4 mt-8 rounded-md dropdown-menu bg-darkTurquis shadow-shadowMenu w-36">
+          <div data-dropdown-menu
+            class="flex flex-col gap-2 p-4 mt-8 rounded-md dropdown-menu bg-darkTurquis shadow-shadowMenu w-36">
             <a class="p-2 text-sm rounded-lg shadow-shadowSubmenu hover:shadow-none hover:text-green"
               href="./angebot.html" role="menuitem">
               Dialoggische-<br />Körpertherapie
@@ -83,7 +85,7 @@
       <!-- Menu MEHR -->
       <div data-dropdown class="dropdown">
         <button data-dropdown-button class="flex flex-col items-center mt-4 link header__open-nav--item">Mehr
-          <div
+          <div data-dropdown-menu
             class="flex flex-col gap-2 p-4 mt-8 text-sm rounded-md dropdown-menu bg-darkTurquis shadow-shadowMenu w-36">
             <a class="py-2 rounded-md shadow-shadowSubmenu hover:shadow-none text-veryDarkBrown hover:text-green"
               href="./mehr.html" role="menuitem">
@@ -182,7 +184,7 @@
       </div>
       <div class="formular">
         <div class="formular__wrap">
-          <form id="register-form">
+          <form id="register-form" action="mail.php" method="post">
             <h2 class="formular__titel kunst-font">Kontaktformular</h2>
             <div class="form--anrede">
               <label id="anrede-label" for="anrede" type="text" aria-describedby="nameHint">Anrede:</label>
