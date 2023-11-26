@@ -11,9 +11,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="shortcut icon" href="./src/img/logo_icon.png" type="image/x-icon" />
   <link rel="stylesheet" href="https://use.typekit.net/ved6zsk.css" />
-  <!-- <link rel="stylesheet" href="./index.css"> -->
   <link rel="stylesheet" href="../main.sass" />
-  <script src="https://cdn.tailwindcss.com"></script>
   <script src="../main.js" defer type="module"></script>
 </head>
 
@@ -184,7 +182,8 @@
       </div>
       <div class="formular">
         <div class="formular__wrap">
-          <form id="register-form" action="mail.php" method="post">
+          <form id="register-form" action="http://praxis-urvertrauen.de/src/formValidation.php" method="post">
+            <!-- <form id="register-form" action="../../src/formValidation.php" method="post"> -->
             <h2 class="formular__titel kunst-font">Kontaktformular</h2>
             <div class="form--anrede">
               <label id="anrede-label" for="anrede" type="text" aria-describedby="nameHint">Anrede:</label>
@@ -195,7 +194,7 @@
                 <option value="divers">Divers</option>
                 <option value="male">Herr</option>
               </select>
-              <p id="anredeHint" class="hidden error" name="anrede">
+              <p id="anredeHint" class="hidden error" name="anredeHint">
                 Wahl erforderlich!
               </p>
             </div>
@@ -303,7 +302,7 @@
     </div>
     <div class="namen--rechtliches">
       <div class="impressum-kontakt-datenschutz">
-        <a href="" class="impressum"> Impressum </a>
+        <a href="../html/impressum.html" class="impressum"> Impressum </a>
         <a href="../html/mehr.html" class="kontakt"> Kontakt </a>
         <a href="../html/datenschutz.html" class="datenschutz">
           Datenschutz

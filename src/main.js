@@ -1,204 +1,79 @@
 "use strict";
 
-// -------- // -------- // -------- // -------- // -------- // -------- // -------- // -------- // -------- // -------- // -------- //  
-// -------- // -------- // -------- // -------- // -------- // -------- // -------- // -------- // - Form Validation -- // -------- //
-// -------- // -------- // -------- // -------- // -------- // -------- // -------- // -------- // -------- // -------- // -------- //
-
-// let form = document.querySelector( '#register-form' );
-// let nameInput = document.querySelector( '#name' );
-// let email = document.querySelector( '#email' );
-// let message = document.querySelector( '#message' );
-// let anrede = document.querySelector( '#anrede' );
-
-// function showErrorMessage ( input, message )
-// {
-//   let container = input.parentElement;
-//   let error = container.querySelector( '.error-message' );
-
-//   if ( error ) {
-//     container.removeChild( error );
-//   }
-
-//   if ( message ) {
-//     error = document.createElement( 'div' );
-//     error.classList.add( 'error-message' );
-//     error.innerText = message;
-//     container.appendChild( error );
-//   }
-// }
-
-// function validateAnrede ()
-// {
-//   let value = anrede.value;
-//   if ( value.length === 0 ) {
-//     showErrorMessage( anrede, 'Wahl erforderlich!' );
-//     return false;
-//   }
-
-//   showErrorMessage( anrede, null );
-//   return true;
-// }
-
-// function validateNameInput ()
-// {
-//   let value = nameInput.value.trim();
-//   if ( !value ) {
-//     showErrorMessage( nameInput, 'Wie möchten Sie gennant werden?' );
-//     return false;
-//   } else if ( !/^[A-Za-zÀ-ÖØ-öø-ÿ]+$/.test( value ) ) {
-//     showErrorMessage( nameInput, 'Nur Buchstaben sind erlaubt' );
-//     return false;
-//   } else if ( value.length === 1 ) {
-//     showErrorMessage( nameInput, 'Zu kurz! Mindestes 2 Buchstaben sind erforderlich' );
-//     return false;
-//   } else if ( value.length > 15 ) {
-//     showErrorMessage( nameInput, 'Zu lang! Maximal 15 Buchstaben' );
-//     return false;
-//   }
-
-//   showErrorMessage( nameInput, null );
-//   return true;
-// }
-
-// function validateEmail ()
-// {
-//   let value = email.value.trim();
-
-//   if ( !value ) {
-//     showErrorMessage( email, 'Feld darf nicht leer sein' );
-//     return false;
-//   } else if ( value.indexOf( '@' && '.' ) === -1 ) {
-//     showErrorMessage( email, 'Invalide E-Mail adresse.' );
-//     return false;
-//   } else if ( value.indexOf( '@' ) === -1 ) {
-//     showErrorMessage( email, 'E-Mail Adresse muss ein @ enthalten.' );
-//     return false;
-//   } else if ( value.indexOf( '.' ) === -1 ) {
-//     showErrorMessage( email, 'E-Mail Adresse muss ein Punkt enthalten.' );
-//     return false;
-//   }
-
-//   showErrorMessage( email, null );
-//   return true;
-// }
-
-// function validateMessage ()
-// {
-//   let value = message.value.trim();
-
-//   if ( value.length < 2 ) {
-//     showErrorMessage( message, 'Wie kann ich Ihnen helfen?' )
-//     return false;
-//   }
-
-//   showErrorMessage( message, null );
-//   return true;
-// }
-
-// function validateForm ()
-// {
-//   let isValidNameInput = validateNameInput();
-//   let isValidEmail = validateEmail();
-//   let isValidMessage = validateMessage();
-//   let isValidAnrede = validateAnrede();
-
-//   return isValidAnrede && isValidNameInput && isValidEmail && isValidMessage;
-// }
-
-// anrede.addEventListener( 'focusout', validateAnrede );
-// nameInput.addEventListener( 'focusout', validateNameInput );
-// email.addEventListener( 'focusout', validateEmail );
-// message.addEventListener( 'focusout', validateMessage );
-
-// form.addEventListener( 'submit', ( e ) =>
-// {
-//   e.preventDefault(); // ordering NOT to submit to the server
-//   if ( validateForm() ) {
-//     alert( 'FORM ERFOLGREICH GESENDET!' );
-//   }
-// } );
-
-// -------- // -------- // -------- // -------- // -------- // -------- // -------- // -------- // -------- // -------- // -------- //  
-// -------- // -------- // -------- // -------- // -------- // -------- // -------- // ---- Logic for the Header Dropdown Menus --- //
-// -------- // -------- // -------- // -------- // -------- // -------- // -------- // -------- // -------- // -------- // -------- //
-// FTP Daten Besorgen
-// WinSCP installieren
-// Email Adresse erstellen und Zugangsdaten bereitstellen
-// Dateien von GoogleDrive herunterladen
-
-document.addEventListener( 'click', e =>
+// Dropdown Menus
+function setupDropdownMenus ()
 {
-  const isDropdownButton = e.target.matches( "[data-dropdown-button]" );
-  // const isDropdownMenu = e.target.matches("[data-dropdown]");
-  if ( !isDropdownButton && e.target.closest( '[data-dropdown]' ) != null ) return
-
-  let currentDropdown
-  if ( isDropdownButton ) {
-    currentDropdown = e.target.closest( '[data-dropdown]' )
-    e.target.children[ 0 ].classList.toggle( 'active' );
-  }
-
-  document.querySelectorAll( "[data-dropdown].active" ).forEach( dropdown =>
+  document.addEventListener( 'click', ( e ) =>
   {
-    if ( dropdown === currentDropdown ) return
-    dropdown.classList.remove( 'active' )
-  } )
-} )
+    const isDropdownButton = e.target.matches( "[data-dropdown-button]" );
+    if ( !isDropdownButton && e.target.closest( '[data-dropdown]' ) != null ) return;
 
-// Submenus header
-document.addEventListener( "click", ( e ) =>
-{
-  const isDropdownButton = e.target.matches( "[data-dropdown-button]" );
-  const isDropdownMenu = e.target.closest( "[data-dropdown]" );
-  const isActiveDropdown = isDropdownMenu && isDropdownMenu.classList.contains( "active" );
+    let currentDropdown;
+    if ( isDropdownButton ) {
+      currentDropdown = e.target.closest( '[data-dropdown]' );
+      e.target.children[ 0 ].classList.toggle( 'active' );
+    }
 
-  if ( !isDropdownButton && !isDropdownMenu ) {
-    document.querySelectorAll( "[data-dropdown].active" ).forEach( ( dropdown ) =>
+    document.querySelectorAll( "[data-dropdown].active" ).forEach( dropdown =>
     {
-      dropdown.classList.remove( "active" );
-      dropdown
-        .querySelector( "[data-dropdown-button] > .active" )
-        .classList.remove( "active" );
+      if ( dropdown === currentDropdown ) return;
+      dropdown.classList.remove( 'active' );
     } );
-  } else if ( isDropdownButton ) {
-    const dropdown = e.target.closest( "[data-dropdown]" );
-    const isActive = dropdown.classList.contains( "active" );
-    document.querySelectorAll( "[data-dropdown].active" ).forEach( ( dropdown ) =>
-    {
-      dropdown.classList.remove( "active" );
+  } );
 
-      dropdown
-        .querySelector( "[data-dropdown-button]" )
+  // Submenus header
+  document.addEventListener( "click", ( e ) =>
+  {
+    const isDropdownButton = e.target.matches( "[data-dropdown-button]" );
+    const isDropdownMenu = e.target.closest( "[data-dropdown]" );
+    const isActiveDropdown = isDropdownMenu && isDropdownMenu.classList.contains( "active" );
 
-        .classList.remove( "active" );
-
-    } );
-    if ( !isActive ) {
-      // Select all elements with the attribute "data-dropdown-button"
-      const dropdownButtons = document.querySelectorAll( '[data-dropdown-menu]' );
-
-      // Loop through each dropdown button
-      dropdownButtons.forEach( ( button ) =>
+    if ( !isDropdownButton && !isDropdownMenu ) {
+      document.querySelectorAll( "[data-dropdown].active" ).forEach( ( dropdown ) =>
       {
-        // Remove the "active" class from the dropdown button
-        button.classList.remove( 'active' );
+        dropdown.classList.remove( "active" );
+        dropdown
+          .querySelector( "[data-dropdown-button] > .active" )
+          .classList.remove( "active" );
+      } );
+    } else if ( isDropdownButton ) {
+      const dropdown = e.target.closest( "[data-dropdown]" );
+      const isActive = dropdown.classList.contains( "active" );
+      document.querySelectorAll( "[data-dropdown].active" ).forEach( ( dropdown ) =>
+      {
+        dropdown.classList.remove( "active" );
+
+        dropdown
+          .querySelector( "[data-dropdown-button]" )
+
+          .classList.remove( "active" );
 
       } );
-      dropdown.classList.add( "active" );
-      e.target.children[ 0 ].classList.add( "active" );
+      if ( !isActive ) {
+        // Select all elements with the attribute "data-dropdown-button"
+        const dropdownButtons = document.querySelectorAll( '[data-dropdown-menu]' );
 
-    } else {
-      dropdown.classList.remove( "active" );
-      e.target.children[ 0 ].classList.remove( "active" );
+        // Loop through each dropdown button
+        dropdownButtons.forEach( ( button ) =>
+        {
+          // Remove the "active" class from the dropdown button
+          button.classList.remove( 'active' );
 
+        } );
+        dropdown.classList.add( "active" );
+        e.target.children[ 0 ].classList.add( "active" );
+
+      } else {
+        dropdown.classList.remove( "active" );
+        e.target.children[ 0 ].classList.remove( "active" );
+
+      }
+    } else if ( isDropdownMenu && !isActiveDropdown ) {
+      e.preventDefault();
+      e.stopPropagation();
     }
-  } else if ( isDropdownMenu && !isActiveDropdown ) {
-    e.preventDefault();
-    e.stopPropagation();
-  }
-} );
-
-// Hide logo when the nav menu is open - tell it to have opacity null when the nav menu is open
+  } );
+}
 
 // Function to check if the navigation menu is open
 function isNavMenuOpen ()
@@ -243,3 +118,6 @@ terminVereinbarenButton.addEventListener( "click", () =>
     closeNavMenu();
   }
 } );
+
+// Call function
+setupDropdownMenus();

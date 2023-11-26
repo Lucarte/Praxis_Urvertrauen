@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [ './index.html', './src/html/mehr.html', './src/html/angebot.html', './src/html/uebermich.html' ],
-  // content: ['./src/*.html'],
+  content: [ './index.html', './src/**/*.html', './src/**/*.js', './src/**/*.php' ],
   theme: {
     fontFamily: {
       'titel': [ 'felt-tip-roman' ],
