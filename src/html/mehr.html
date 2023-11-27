@@ -182,12 +182,12 @@
       </div>
       <div class="formular">
         <div class="formular__wrap">
-          <form id="register-form" action="http://praxis-urvertrauen.de/src/formValidation.php" method="post">
+          <form id="register-form" action="http://praxis-urvertrauen.de/PHP/sendMail.php" method="post">
             <!-- <form id="register-form" action="../../src/formValidation.php" method="post"> -->
             <h2 class="formular__titel kunst-font">Kontaktformular</h2>
             <div class="form--anrede">
               <label id="anrede-label" for="anrede" type="text" aria-describedby="nameHint">Anrede:</label>
-              <select id="anrede" name="anrede" data-check="anrede">
+              <select required id="anrede" name="anrede" data-check="anrede">
                 <option value="">Bitte wählen</option>
                 <option value="child">Kind</option>
                 <option value="female">Frau</option>
@@ -200,15 +200,15 @@
             </div>
             <div class="input-wrapper">
               <label for="name">Name</label>
-              <input id="name" name="name" type="text" class="feedback-input" placeholder="Name" />
+              <input required id="name" name="name" type="text" class="feedback-input" placeholder="Name" />
             </div>
             <div class="input-wrapper">
               <label for="email">E-Mail</label>
-              <input id="email" name="email" type="email" class="feedback-input" placeholder="E-Mail" />
+              <input required id="email" name="email" type="email" class="feedback-input" placeholder="E-Mail" />
             </div>
             <div>
               <label for="message">Nachricht</label>
-              <textarea id="message" name="message" class="feedback-input" placeholder="Nachricht"></textarea>
+              <textarea required id="message" name="message" class="feedback-input" placeholder="Nachricht"></textarea>
             </div>
             <input type="submit" value="SUBMIT" />
           </form>
