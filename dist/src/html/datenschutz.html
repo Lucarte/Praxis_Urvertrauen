@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Urvertrauen</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./src/img/logo_icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://use.typekit.net/ved6zsk.css" />
+  <script type="module" crossorigin src="../../assets/main-CohDmYPw.js"></script>
+  <link rel="stylesheet" crossorigin href="../../assets/main-BPSwgT_a.css">
+</head>
+
+<body>
+    <header class="z-40 header h-28">
+        <a href="../../index.html" role="menuitem" class="z-50 logo">
+            <img src="../../assets/logo_foto-D0ewGTQm.svg"
+                alt="graphic design of a spiral simulating a tree trunk, origin to the second half of the design: a branch showing two leaves, one pointing right, the other left. Both in green, the trunk in brown." />
+        </a>
+        <h2 class="header__name">
+            <a href="../../index.html">
+                PRAXIS
+                <br />
+                URVERTRAUEN
+        </h2>
+        <div class="header__open-nav">
+            <!-- Menu HOME -->
+            <div data-dropdown class="dropdown">
+                <a data-dropdown-button class="flex flex-col items-center mt-4 header__open-nav--item"
+                    href="../../index.html" role="menuitem">
+                    Home
+                </a>
+            </div>
+
+            <!-- Menu ÜBER MICH -->
+            <div data-dropdown class="dropdown">
+                <button data-dropdown-button class="flex flex-col items-center mt-4 header__open-nav--item">Über mich
+                    <div data-dropdown-menu
+                        class="flex flex-col gap-2 p-4 rounded-md dropdown-menu bg-darkTurquis shadow-shadowMenu w-36">
+                        <a class="p-2 text-sm rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green"
+                            href="./uebermich.html" role="menuitem">Kennst du das?</a>
+                        <a class="p-2 text-sm rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green"
+                            href="./uebermich.html#qualifications" role="menuitem">Qualifications</a>
+                    </div>
+                </button>
+            </div>
+
+            <!-- Menu ANGEBOT -->
+            <div data-dropdown class="dropdown">
+                <button data-dropdown-button class="flex flex-col items-center mt-4 link header__open-nav--item">Angebot
+                    <div data-dropdown-menu
+                        class="flex flex-col gap-2 p-4 mt-8 text-sm rounded-md dropdown-menu bg-darkTurquis shadow-shadowMenu w-36">
+                        <a class="p-2 rounded-lg text-veryDarkBrown shadow-shadowSubmenu hover:shadow-none hover:text-green"
+                            href="./angebot.html" role="menuitem">
+                            Dialogische-<br>Körpertherapie
+                        </a>
+                        <a class="p-2 rounded-md text-veryDarkBrown shadow-shadowSubmenu hover:shadow-none hover:text-green"
+                            href="/src/html/angebot.html#hypnose" role="menuitem">
+                            Hypnose
+                        </a>
+                        <a class="p-2 rounded-md shadow-shadowSubmenu text-veryDarkBrown hover:shadow-none hover:text-green"
+                            href="/src/html/angebot.html#FAQ" role="menuitem">
+                            FAQ
+                        </a>
+                    </div>
+                </button>
+            </div>
+
+            <!-- Menu MEHR -->
+            <div data-dropdown class="dropdown">
+                <button data-dropdown-button class="flex flex-col items-center mt-4 header__open-nav--item">
+                    Mehr
+                    <div data-dropdown-menu
+                        class="flex flex-col gap-2 p-4 mt-8 text-sm rounded-md dropdown-menu bg-darkTurquis shadow-shadowMenu w-36 ">
+                        <a class="p-2 rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green"
+                            href="./mehr.html" role="menuitem">
+                            Kontakt
+                        </a>
+                        <a class="p-2 rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green"
+                            href="./mehr.html#anfahrt" role="menuitem">
+                            Anfahrt
+                        </a>
+                        <a class="p-2 rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green"
+                            href="./mehr.html#kosten" role="menuitem">
+                            Kosten
+                        </a>
+                    </div>
+                </button>
+            </div>
+
+            <!-- CTA BUTTON -->
+            <a class="btn, header__btn" href="./mehr.html">
+                TERMIN
+                <br />
+                VEREINBAREN
+            </a>
+            <nav role="navigation">
+                <div class="nav__kebab">
+                    <!--A fake / hidden checkbox is used as click receiver, so you can use the :checked selector on it.-->
+                    <input type="checkbox" />
+                    <!--Some spans to act as a kebab-->
+                    <span class="kebab__span kebab--top"></span>
+                    <span class="kebab__span kebab--middle"></span>
+                    <span class="kebab__span kebab--bottom"></span>
+                    <span class="kebab__span kebab--hidden"></span>
+                    <ul class="menu">
+                        <li class="menu__btn">
+                            <a href="./mehr.html#formular">Termin</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./uebermich.html">Über mich</a>
+                        </li>
+                        <li>
+                            <a href="./angebot.html">Angebot</a>
+                        </li>
+                        <li>
+                            <a href="./mehr.html">Mehr</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    // Main Body
+    <div class="container max-w-2xl p-8 mx-auto mt-20">
+
+        <h1 class="mb-12 text-4xl font-medium text-center underline font-titel mt-14">Datenschutz</h1>
+
+
+        <div class="mb-6">
+            <h2 class="mb-2 text-xl font-bold font-titel">Processed Data Types:</h2>
+            <ul class="pl-6 list-disc">
+                <li>Kontaktdaten.</li>
+                <li>Inhaltsdaten.</li>
+                <li>Nutzungsdaten.</li>
+                <li>Meta-/Kommunikationsdaten.</li>
+            </ul>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="mb-2 text-xl font-bold font-titel">Affected Person Categories:</h2>
+            <ul class="pl-6 list-disc">
+                <li>Kommunikationspartner.</li>
+                <li>Nutzer.</li>
+            </ul>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="mb-2 text-xl font-bold font-titel">Processing Purposes:</h2>
+            <ul class="pl-6 list-disc">
+                <li>Erbringung vertraglicher Leistungen und Kundenservice.</li>
+                <li>Kontaktanfragen und Kommunikation.</li>
+                <li>Sicherheitsmaßnahmen.</li>
+                <li>Verwaltung und Beantwortung von Anfragen.</li>
+                <li>Feedback.</li>
+                <li>Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit.</li>
+                <li>Informationstechnische Infrastruktur.</li>
+            </ul>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="mb-2 text-xl font-bold font-titel">Relevant Legal Bases:</h2>
+            <ul class="pl-6 list-disc">
+                <li>Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO).</li>
+                <li>Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO).</li>
+            </ul>
+            <p>Zusätzlich zu den Datenschutzregelungen der DSGVO gelten nationale Datenschutzvorgaben in Ihrem bzw.
+                unserem Wohn- oder Sitzland.</p>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="mb-2 text-xl font-bold font-titel">Security Measures:</h2>
+            <p>Wir treffen technische und organisatorische Maßnahmen gemäß gesetzlicher Vorgaben, um ein angemessenes
+                Schutzniveau zu gewährleisten. Dazu gehören Sicherung der Vertraulichkeit, Integrität und
+                Verfügbarkeit von Daten, SSL-Verschlüsselung (https).</p>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="mb-2 text-xl font-bold font-titel">Transmission of Personal Data:</h2>
+            <p>Daten können an andere Stellen übermittelt werden, unter Einhaltung gesetzlicher Vorgaben und Abschluss
+                entsprechender Verträge zum Datenschutz.</p>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="mb-2 text-xl font-bold font-titel">Data Processing in Third Countries:</h2>
+            <p>Datenübermittlung in Drittländer erfolgt im Einklang mit gesetzlichen Vorgaben, ggf. mit Einwilligung
+                oder auf Basis von Standardvertragsklauseln.</p>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="mb-2 text-xl font-bold font-titel">Data Deletion:</h2>
+            <p>Daten werden nach gesetzlichen Vorgaben gelöscht oder eingeschränkt. Die Datenschutzhinweise enthalten
+                weitere Angaben zur Aufbewahrung und Löschung von Daten.</p>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="mb-2 text-xl font-bold font-titel">Use of Cookies:</h2>
+            <p>Cookies werden im Einklang mit gesetzlichen Vorschriften verwendet. Nutzer erhalten die Möglichkeit zur
+                Einwilligung oder können widersprechen. Speicherdauer von Cookies wird differenziert.</p>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="mb-2 text-xl font-bold font-titel">Online Offering and Web Hosting:</h2>
+            <p>Verarbeitung von Nutzerdaten zur Bereitstellung des Onlineangebotes, unter Berücksichtigung berechtigter
+                Interessen.</p>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="mb-2 text-xl font-bold font-titel">Contact and Inquiry Management:</h2>
+            <p>Verarbeitung von Kontaktdaten und Anfragen zur Erfüllung vertraglicher Pflichten oder auf Grundlage
+                berechtigter Interessen.</p>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="mb-2 text-xl font-bold font-titel">Plugins and Embedded Functions and Content:</h2>
+            <p>Einbindung von Inhalten erfordert Verarbeitung von Nutzerdaten. Drittanbieter können IP-Adressen und
+                Pixel-Tags nutzen.</p>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="mb-2 text-xl font-bold font-titel">Change and Update of Privacy Policy:</h2>
+            <p>Die Datenschutzerklärung wird angepasst, um Änderungen in den Datenverarbeitungen zu reflektieren.</p>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="mb-2 text-xl font-bold font-titel">Rights of Data Subjects:</h2>
+            <p>Betroffene Personen haben Rechte gemäß der DSGVO, einschließlich Widerspruchsrecht, Widerrufsrecht,
+                Auskunftsrecht, Recht auf Berichtigung, Löschung und Datenübertragbarkeit, sowie das Recht auf
+                Beschwerde bei einer Aufsichtsbehörde.</p>
+        </div>
+
+    </div>
+
+
+    <footer class="w-screen mt-auto">
+        <div class="footer__namen">
+            <h2 class="namen--praxis">
+                PRAXIS
+                <br>
+                URVERTRAUEN
+            </h2>
+            <h2 class="namen--annes">
+                Anne Grysar
+            </h2>
+            <img src="../../assets/tree-CH_-MbAP.svg" alt="bottom half of the logo">
+        </div>
+        <div class="footer__kontakt-daten">
+            <h2 class="font-medium namen--annes">
+                ANNE GRYSAR
+            </h2>
+            <p class="kontakt-daten--addresse">
+                Klaus-Rösner-Ring 29, 25474 Hasloh
+            </p>
+            <p class="kontakt-daten--telefon">
+                Tel. +49 175 299 1654
+            </p>
+        </div>
+        <div class="namen--rechtliches">
+            <div class="impressum-kontakt-datenschutz">
+                <a href="../html/impressum.html" class="impressum">
+                    Impressum
+                </a>
+                <a href="../html/mehr.html" class="kontakt">
+                    Kontakt
+                </a>
+                <a href="../html/datenschutz.html" class="datenschutz">
+                    Datenschutz
+                </a>
+            </div>
+            <p class="copyright">
+                © 2023 | Urvertrauen | Schleswig-Holstein
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

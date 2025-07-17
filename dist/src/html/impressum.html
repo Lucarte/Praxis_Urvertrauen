@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Urvertrauen</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./src/img/logo_icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://use.typekit.net/ved6zsk.css" />
+  <script type="module" crossorigin src="../../assets/main-CohDmYPw.js"></script>
+  <link rel="stylesheet" crossorigin href="../../assets/main-BPSwgT_a.css">
+</head>
+
+<body class="min-h-screen">
+    <header class="z-40 header h-28">
+        <a href="../../index.html" role="menuitem" class="z-50 logo">
+            <img src="../../assets/logo_foto-D0ewGTQm.svg"
+                alt="graphic design of a spiral simulating a tree trunk, origin to the second half of the design: a branch showing two leaves, one pointing right, the other left. Both in green, the trunk in brown." />
+        </a>
+        <h2 class="header__name">
+            <a href="../../index.html">
+                PRAXIS
+                <br />
+                URVERTRAUEN
+        </h2>
+        <div class="header__open-nav">
+            <!-- Menu HOME -->
+            <div data-dropdown class="dropdown">
+                <a data-dropdown-button class="flex flex-col items-center mt-4 header__open-nav--item"
+                    href="../../index.html" role="menuitem">
+                    Home
+                </a>
+            </div>
+
+            <!-- Menu ÜBER MICH -->
+            <div data-dropdown class="dropdown">
+                <button data-dropdown-button class="flex flex-col items-center mt-4 header__open-nav--item">Über mich
+                    <div data-dropdown-menu
+                        class="flex flex-col gap-2 p-4 rounded-md dropdown-menu bg-darkTurquis shadow-shadowMenu w-36">
+                        <a class="p-2 text-sm rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green"
+                            href="./uebermich.html" role="menuitem">Kennst du das?</a>
+                        <a class="p-2 text-sm rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green"
+                            href="./uebermich.html#qualifications" role="menuitem">Qualifications</a>
+                    </div>
+                </button>
+            </div>
+
+            <!-- Menu ANGEBOT -->
+            <div data-dropdown class="dropdown">
+                <button data-dropdown-button class="flex flex-col items-center mt-4 link header__open-nav--item">Angebot
+                    <div data-dropdown-menu
+                        class="flex flex-col gap-2 p-4 mt-8 text-sm rounded-md dropdown-menu bg-darkTurquis shadow-shadowMenu w-36">
+                        <a class="p-2 rounded-lg text-veryDarkBrown shadow-shadowSubmenu hover:shadow-none hover:text-green"
+                            href="./angebot.html" role="menuitem">
+                            Dialogische-<br>Körpertherapie
+                        </a>
+                        <a class="p-2 rounded-md text-veryDarkBrown shadow-shadowSubmenu hover:shadow-none hover:text-green"
+                            href="/src/html/angebot.html#hypnose" role="menuitem">
+                            Hypnose
+                        </a>
+                        <a class="p-2 rounded-md shadow-shadowSubmenu text-veryDarkBrown hover:shadow-none hover:text-green"
+                            href="/src/html/angebot.html#FAQ" role="menuitem">
+                            FAQ
+                        </a>
+                    </div>
+                </button>
+            </div>
+
+            <!-- Menu MEHR -->
+            <div data-dropdown class="dropdown">
+                <button data-dropdown-button class="flex flex-col items-center mt-4 header__open-nav--item">
+                    Mehr
+                    <div data-dropdown-menu
+                        class="flex flex-col gap-2 p-4 mt-8 text-sm rounded-md dropdown-menu bg-darkTurquis shadow-shadowMenu w-36 ">
+                        <a class="p-2 rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green"
+                            href="./mehr.html" role="menuitem">
+                            Kontakt
+                        </a>
+                        <a class="p-2 rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green"
+                            href="./mehr.html#anfahrt" role="menuitem">
+                            Anfahrt
+                        </a>
+                        <a class="p-2 rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green"
+                            href="./mehr.html#kosten" role="menuitem">
+                            Kosten
+                        </a>
+                    </div>
+                </button>
+            </div>
+
+            <!-- CTA BUTTON -->
+            <a class="btn, header__btn" href="./mehr.html">
+                TERMIN
+                <br />
+                VEREINBAREN
+            </a>
+            <nav role="navigation">
+                <div class="nav__kebab">
+                    <!--A fake / hidden checkbox is used as click receiver, so you can use the :checked selector on it.-->
+                    <input type="checkbox" />
+                    <!--Some spans to act as a kebab-->
+                    <span class="kebab__span kebab--top"></span>
+                    <span class="kebab__span kebab--middle"></span>
+                    <span class="kebab__span kebab--bottom"></span>
+                    <span class="kebab__span kebab--hidden"></span>
+                    <ul class="menu">
+                        <li class="menu__btn">
+                            <a href="./mehr.html#formular">Termin</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./uebermich.html">Über mich</a>
+                        </li>
+                        <li>
+                            <a href="./angebot.html">Angebot</a>
+                        </li>
+                        <li>
+                            <a href="./mehr.html">Mehr</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    // Main Body
+    <div class="container max-w-2xl p-8 mx-auto mt-20">
+
+        <h1 class="mb-8 text-4xl font-bold text-center underline font-titel mt-14">Impressum</h1>
+        <div class="mt-8">
+            <h2 class="mb-20 text-lg font-bold text-center">Angaben gemäß § 5 TMG</h2>
+            <div class="mt-4">
+                <p class="my-6 text-xl font-bold font-titel">Verantwortlich für die Inhalte</p>
+                <div>
+                    <div class="contact__daten">
+                        <h2 class="underline">Praxis Urvertrauen</h2>
+                        <p class="contact__addresse">
+                            Klaus-Rösner-Ring 29
+                            <br />
+                            25474 Hasloh
+                        </p>
+                        <p id="formular" class="mt-4">Tel. +49 175 299 1654</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-6">
+                <p class="text-xl font-bold font-titel">Gesetzliche Berufsbezeichnung</p>
+                <p class="mt-2">Heilpraktiker nach Heilpraktikergesetz mit Erlaubniserteilung am 01.03.2022</p>
+            </div>
+
+            <div class="mt-6">
+                <p class="text-xl font-bold font-titel">Aufsichtsbehörde</p>
+                <p class="mt-2">Bezirksamt Altona - Fachamt Gesundheit</p>
+                <p>Bahrenfelderstraße 254-260 22765 Hamburg <a href="https://www.hamburg.de/altona/fachamt-gesundheit/"
+                        class="text-blue-500">https://www.hamburg.de/altona/fachamt-gesundheit/</a></p>
+            </div>
+
+            <div class="mt-6">
+                <p class="text-xl font-bold font-titel">Verbraucherstreitbeilegung/Universalschlichtungsstelle</p>
+                <p class="mt-2">Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
+                    Verbraucherschlichtungsstelle teilzunehmen.</p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <footer class="w-full mt-auto">
+        <div class="footer__namen">
+            <h2 class="namen--praxis">
+                PRAXIS
+                <br>
+                URVERTRAUEN
+            </h2>
+            <h2 class="namen--annes">
+                Anne Grysar
+            </h2>
+            <img src="../../assets/tree-CH_-MbAP.svg" alt="bottom half of the logo">
+        </div>
+        <div class="footer__kontakt-daten">
+            <h2 class="font-medium namen--annes">
+                ANNE GRYSAR
+            </h2>
+            <p class="kontakt-daten--addresse">
+                Klaus-Rösner-Ring 29, 25474 Hasloh
+            </p>
+            <p class="kontakt-daten--telefon">
+                Tel. +49 175 299 1654
+            </p>
+        </div>
+        <div class="namen--rechtliches">
+            <div class="impressum-kontakt-datenschutz">
+                <a href="../html/impressum.html" class="impressum">
+                    Impressum
+                </a>
+                <a href="../html/mehr.html" class="kontakt">
+                    Kontakt
+                </a>
+                <a href="../html/datenschutz.html" class="datenschutz">
+                    Datenschutz
+                </a>
+            </div>
+            <p class="copyright">
+                © 2023 | Urvertrauen | Schleswig-Holstein
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

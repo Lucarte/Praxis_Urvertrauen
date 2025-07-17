@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Urvertrauen</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="./src/img/logo_icon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://use.typekit.net/ved6zsk.css">
+  <script type="module" crossorigin src="../../assets/main-CohDmYPw.js"></script>
+  <link rel="stylesheet" crossorigin href="../../assets/main-BPSwgT_a.css">
+</head>
+
+<body class="flex flex-col items-center min-h-screen body-angebot"></body>
+<header class="z-40 header h-28">
+  <a href="../../index.html" role="menuitem" class="z-50 logo">
+    <img src="../../assets/logo_foto-D0ewGTQm.svg"
+      alt="graphic design of a spiral simulating a tree trunk, origin to the second half of the design: a branch showing two leaves, one pointing right, the other left. Both in green, the trunk in brown." />
+  </a>
+  <h2 class="header__name">
+    <a href="../../index.html">
+      PRAXIS
+      <br />
+      URVERTRAUEN
+  </h2>
+  <div class="header__open-nav">
+    <!-- Menu HOME -->
+    <div data-dropdown class="dropdown">
+      <a data-dropdown-button class="flex flex-col items-center mt-4 header__open-nav--item" href="../../index.html"
+        role="menuitem">
+        Home
+      </a>
+    </div>
+
+    <!-- Menu ÜBER MICH -->
+    <div data-dropdown class="dropdown">
+      <button data-dropdown-button class="flex flex-col items-center mt-4 header__open-nav--item">Über mich
+        <div data-dropdown-menu
+          class="flex flex-col gap-2 p-4 rounded-md dropdown-menu bg-darkTurquis shadow-shadowMenu w-36">
+          <a class="p-2 text-sm rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green"
+            href="./uebermich.html" role="menuitem">Kennst du das?</a>
+          <a class="p-2 text-sm rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green"
+            href="./uebermich.html#qualifications" role="menuitem">Qualifications</a>
+        </div>
+      </button>
+    </div>
+
+    <!-- Menu ANGEBOT -->
+    <div data-dropdown class="dropdown">
+      <button data-dropdown-button class="flex flex-col items-center mt-4 link header__open-nav--item">Angebot
+        <div data-dropdown-menu
+          class="flex flex-col gap-2 p-4 mt-8 text-sm rounded-md dropdown-menu bg-darkTurquis shadow-shadowMenu w-36">
+          <a class="p-2 rounded-lg text-veryDarkBrown shadow-shadowSubmenu hover:shadow-none hover:text-green"
+            href="./angebot.html" role="menuitem">
+            Dialogische-<br>Körpertherapie
+          </a>
+          <a class="p-2 rounded-md text-veryDarkBrown shadow-shadowSubmenu hover:shadow-none hover:text-green"
+            href="/src/html/angebot.html#hypnose" role="menuitem">
+            Hypnose
+          </a>
+          <a class="p-2 rounded-md shadow-shadowSubmenu text-veryDarkBrown hover:shadow-none hover:text-green"
+            href="/src/html/angebot.html#FAQ" role="menuitem">
+            FAQ
+          </a>
+        </div>
+      </button>
+    </div>
+
+    <!-- Menu MEHR -->
+    <div data-dropdown class="dropdown">
+      <button data-dropdown-button class="flex flex-col items-center mt-4 header__open-nav--item">
+        Mehr
+        <div data-dropdown-menu
+          class="flex flex-col gap-2 p-4 mt-8 text-sm rounded-md dropdown-menu bg-darkTurquis shadow-shadowMenu w-36 ">
+          <a class="p-2 rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green" href="./mehr.html"
+            role="menuitem">
+            Kontakt
+          </a>
+          <a class="p-2 rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green" href="./mehr.html#anfahrt"
+            role="menuitem">
+            Anfahrt
+          </a>
+          <a class="p-2 rounded-md shadow-shadowSubmenu hover:shadow-none hover:text-green" href="./mehr.html#kosten"
+            role="menuitem">
+            Kosten
+          </a>
+        </div>
+      </button>
+    </div>
+
+    <!-- CTA BUTTON -->
+    <a class="btn, header__btn" href="./mehr.html">
+      TERMIN
+      <br />
+      VEREINBAREN
+    </a>
+    <nav role="navigation">
+      <div class="nav__kebab">
+        <!--A fake / hidden checkbox is used as click receiver, so you can use the :checked selector on it.-->
+        <input type="checkbox" />
+        <!--Some spans to act as a kebab-->
+        <span class="kebab__span kebab--top"></span>
+        <span class="kebab__span kebab--middle"></span>
+        <span class="kebab__span kebab--bottom"></span>
+        <span class="kebab__span kebab--hidden"></span>
+        <ul class="menu">
+          <li class="menu__btn">
+            <a href="./mehr.html#formular">Termin</a>
+          </li>
+          <li>
+            <a href="../../index.html">Home</a>
+          </li>
+          <li>
+            <a href="./uebermich.html">Über mich</a>
+          </li>
+          <li>
+            <a href="./angebot.html">Angebot</a>
+          </li>
+          <li>
+            <a href="./mehr.html">Mehr</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+<!-- 
+                                              
+                                                  SECTION ONE
+   -->
+
+<section class="flex-row w-screen mt-24 section__one bg-gradient-to-r from-darkTurquis to-lightTurquis lg:flex">
+  <div class="hidden lg:flex relative items-center bg-darkBrown w-[25%] xl:w-[30%] min-[1700px]:w-[20%]">
+    <img class="absolute -right-16 max-w-[250px] xl:max-w-[350px]" src="../../assets/mutter_kind-CgK3rK1H.png"
+      alt="Picture of a mother (waist down dressed with kakhi pants and a fall jacket) holding both hands of a todler right in front of her as if giving his second steps">
+  </div>
+  <div
+    class="pt-16 pb-20 md:px-10 lg:py-0 lg:mt-[6%] lg:mb-[9%] lg:h-full lg:w-[75%] xl:pt-16 xl:mx-10 xl:px-16 xl:w-[70%] min-[1700px]:w-[80%] ">
+    <h2 class="mb-6 ml-12 text-lg font-bold sm:mt-0 text-darkBrown lg:hidden">ANGEBOT</h2>
+    <span class="block w-[5.5rem] h-[.2rem] bg-lightBrown rounded-lg -mt-4 mb-14 ml-16 lg:hidden"></span>
+    <div class="flex flex-col items-center mb-6 font-bold text-darkBrown font-titel ">
+      <h2 class="hidden lg:flex lg:text-[23px] xl:text-2xl">Psychotherapie - kennt man...</h2>
+      <h2 class="hidden lg:flex mb-16 lg:text-[23px] xl:text-2xl">Aber Dialogische Körpertherapie - Was ist das?<span
+          class="absolute rounded-lg h-1 w-[29rem] bg-lightBrown mt-12 ml-16"></span>
+      </h2>
+    </div>
+    <h2 class="mb-6 -mt-6 text-2xl font-bold text-center font-titel text-darkBrown lg:hidden">Dialogische Körpertherapie
+    </h2>
+    <div class="mx-10 overflow-scroll h-96 text-darkBrown">
+      <p class="text-center leading-8 lg:text-[17px]">Es ist wie ein Wunder: Der Körper ist ein riesengroßer Speicher
+        voller Erinnerungen und Wissen.
+        Insbesondere schlechte Erfahrungen werden abgespeichert und oft erst einmal in Spannungen festgehalten. Das ist
+        zum einen
+        ein lebenswichtiger Mechanismus, der uns vor Verletzungen schützt, der aber auch schöne Erfahrungen und
+        Möglichkeiten
+        blockiert, weil der Körper dann nicht mehr für alles durchlässig ist.
+        Durch meine Arbeit werden diese Spannungen gefunden, gespürt und wieder durchlässiger gemacht.
+        Überlebensmechanismen
+        werden hinterfragt und angenommen als solche oder durch neue, positive Erlebnisse relativiert und evtl.
+        überschrieben. Das
+        Nervensystem wird toleranter in seinen Reaktionen und wir können wieder besser Durchatmen, zur Ruhe kommen, uns
+        wohlfühlen. Das Stressempfinden sinkt und neue Konflikte oder Belastungen können besser gemanagt werden. Das
+        Urvertrauen wächst.
+        Ich möchte, dass Du lernst, Deinen Körper in seiner Sprache zu verstehen, Deine Impulse, Gefühle und Wünsche zu
+        erkennen
+        und einzusortieren. Durch verschiedene Techniken wie Atmen, Bewegungen, Berührungen und Massagen werden
+        Blockaden
+        gelöst und neue Möglichkeiten gewonnen, die nicht nur der Körper erlebt, sondern durch die bewusste Wahrnehmung
+        und
+        unsere Gespräche darüber Deine ganze Welt verändern können.
+        Ich biete hierfür individuell abgestimmte Termine von ca. 50 Minuten an.
+        In einem ersten Kennenlerntermin sprechen wir über Deine Fragen, Probleme und Wünsche und stellen einen Plan für
+        das
+        Erreichen Deiner Ziele auf. Ich kann Dir nie sagen, wie lange Dein Weg dauern wird, da die Ziele und
+        Hintergründe sehr
+        unterschiedlich sein können und sch auch ändern können im Laufe eines Prozesses. Manches geht ganz schnell,
+        anderes
+        braucht Durchhaltevermögen.
+        Bei allen weiteren Terminen wird es eine Mischung aus Gespräch und Körperarbeit geben.
+        Bringe bitte zu allen Terminen ein großes Handtuch mit und ziehe bequeme Kleidung an.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 
+                                              
+                                                  SECTION TWO
+                                              
+                                                 -->
+
+<section id="hypnose"
+  class="w-screen bg-gradient-to-b lg:bg-gradient-to-l from-darkBrown to-lightBrown lg:flex lg:flex-row-reverse">
+  <div class="hidden lg:flex relative items-center bg-darkTurquis w-[25%] xl:w-[30%] min-[1700px]:w-[20%]">
+    <img class="absolute right-24 2xl:right-40 max-w-[250px] xl:max-w-[350px] min-[1700px]:right-16"
+      src="../../assets/kugel-BBs9TCsL.png" alt="Bild von einer transparenten Kugel, die Bäume reflektiert">
+  </div>
+  <div
+    class="pt-16 pb-20 md:px-16 lg:py-0 lg:mt-[6%] lg:mb-[9%] lg:h-full lg:w-[75%] xl:pt-16 xl:mx-10 xl:px-16 xl:w-[70%] min-[1700px]:w-[80%]">
+    <div class="flex flex-col items-center mb-6 font-bold text-darkBrown font-titel lg:text-veryDarkBrown ">
+      <h2 class="hidden lg:flex mb-8 lg:text-[23px] xl:text-2xl">Hypnose<span
+          class="absolute rounded-lg h-[.2rem] w-[4.5rem] bg-darkTurquis mt-10 ml-[1.7rem]"></span>
+      </h2>
+    </div>
+    <h2 class="mb-6 -mt-6 text-2xl font-bold text-center font-titel text-veryDarkBrown lg:hidden">Hypnose</h2>
+    <div class="px-10 overflow-scroll h-96 text-veryDarkBrown">
+
+      <div class="flex flex-col text-center leading-8 lg:text-[17px]">
+        <p class="pr-10">Hypnose – gackern wie ein Huhn…</p>
+        <p class="pl-10">Hypnosetherapie – was passiert da?</p><br>
+      </div>
+      <p class="text-center leading-8 lg:text-[17px]">
+        Eine Person aus dem Publikum kommt auf die Bühne, wird kurz auf magische Art und Weise ihres Willens beraubt und
+        macht
+        auf Kommando merkwürdige Dinge… DAS würde ich auch nicht mit mir machen lassen!
+        Was aber tatsächlich funktioniert - und immer wieder faszinierend ist – ist, dass man in einer tiefen
+        Entspannung andere
+        Zugänge zu seinem Gedächtnis und seinen Denkmustern hat. Schon allein die tiefe Entspannung, die sich so ähnlich
+        anfühlt
+        wie der Zustand kurz vor dem Einschlafen, löst viele Verspannungen und setzt das Nervensystem in einen
+        erholsamen
+        Ruhemodus. Das ist dann der Zeitpunkt, wo ich Dir z.B. helfen kann, verborgenes Wissen in dir aufzuspüren,
+        Gedankenmuster
+        oder Ängste zu lösen oder Gewohnheiten zu ändern. Dafür besprechen wir alles schon vor der eigentlichen
+        Tiefenentspannung,
+        also was dich stört, wo es vermutlich herkommt, was passende, neue Glaubenssätze wären und so weiter. Alles
+        absolut sicher
+        und ohne irgendeine Show. Wie bei jeder anderen Therapie kann ich auch hierbei nicht sagen, wie viele Sitzungen
+        nötig sind.
+        Es hängt davon ab, wie tief verankert die Probleme sind, wie gut der Zugang ist, den wir vorher erarbeiten und
+        wie schnell das
+        Gehirn umlernen möchte. Wir sind eben keine Computer, die man mal schnell komplett neu programmieren kann,
+        sondern zum
+        Glück sehr komplexe Individuen, deren Kodierung nicht immer auf den ersten Blick zu erkennen ist.
+        Die Kombination:
+        Auch in der Körperarbeit kann es vorteilhaft sein, eine Tiefenentspannung einzuleiten, damit der Körper noch
+        besser die
+        Impulse meiner Hände annehmen und integrieren kann. Diese Kombination aus Hypnose und Körperarbeit hat sich
+        schon gut
+        bewährt in meiner Praxis und ist machbar, wenn wir es beide für sinnvoll erachten. Vielleicht ist es auch ein
+        schöner Einstieg in
+        die eigentliche Hypnosetherapie.
+      </p>
+    </div>
+  </div>
+  <div class="w-screen overflow-hidden lg:hidden lg:w-0">
+    <img src="../../assets/kugel-BBs9TCsL.png" alt="Bild von einer transparenten Kugel, die Bäume reflektiert"
+      class="relative scale-125 min-w-full md:scale-[60%] md:-mt-24 lg:-z-10 lg:h-0">
+
+  </div>
+</section>
+
+<!-- 
+                                              
+                                                  SECTION THREE
+                                              
+                                                 -->
+
+<section id="FAQ" class="flex-row w-screen section__one bg-gradient-to-r from-darkTurquis to-lightTurquis lg:flex">
+  <div class="hidden lg:flex relative items-center bg-darkBrown w-[25%] xl:w-[30%] min-[1700px]:w-[20%]">
+    <img class="absolute -right-16 max-w-[250px] xl:max-w-[350px]" src="../../assets/fuss-DHnlA-VC.png"
+      alt="Picture of a hand of a mother maybe, holding a barefoot of a baby">
+  </div>
+  <div
+    class="pt-16 pb-20 md:px-10 lg:py-0 lg:mt-[6%] lg:mb-[9%] lg:h-full lg:w-[75%] xl:pt-0 xl:mx-10 xl:px-16 xl:w-[70%] min-[1700px]:w-[80%] ">
+
+    <div class="flex flex-col items-center mb-6 font-bold text-darkBrown font-titel 2xl:mb-16">
+      <h2 class="hidden lg:flex mb-6 lg:text-[23px] xl:text-2xl">F A Q<span
+          class="absolute h-1 mt-10 ml-5 rounded-lg w-14 bg-lightBrown"></span>
+      </h2>
+    </div>
+    <h2 class="mb-6 -mt-6 text-2xl font-bold text-center font-titel text-darkBrown lg:hidden">F A Q</h2>
+    <div class="h-96 overflow-scroll mx-16 text-darkBrown text-left leading-8 lg:mx-0 lg:px-20 xl:px-10 xl:h-[35rem]">
+      <h3 class="mt-4 font-bold">
+        Wie lange dauert ein Termin und welche Kosten kommen auf mich zu?
+      </h3>
+      <p class="">
+        Ein Termin von ca. 50 Minuten berechne ich mit 90€.
+        Wenn wir länger brauchen sollten für eine Behandlung, kostet jede weitere halbe Stunde 50 €.
+      </p>
+      <h3 class="mt-4 font-bold">
+        Übernimmt die Krankenkasse die Kosten?
+      </h3>
+      <p class="">
+        In den meisten Fällen nicht, da ich eine Privatpraxis habe. Es gibt aber immer die Möglichkeit, bei der Kasse
+        nachzufragen, ob sie eine Ausnahme genehmigen, wenn man in den Kassenpraxen keinen Termin bekommen hat. Bei
+        Privatkassen ist es auch immer ratsam, vorher abzuklären, welche Kosten übernommen werden und was man selber
+        übernehmen muss.
+      </p>
+      <h3 class="mt-4 font-bold">
+        Was ist der Unterschied zu Gesprächstherapie oder Verhaltenstherapie?
+      </h3>
+      <p class="">
+        Wir beginnen immer mit einem Gespräch, um aktuelle Themen und Entwicklungen zu erheben. Danach machen wir eine
+        Körperarbeit zu Deinem Thema. Was genau das ist, kann ich vorher nie sagen, da jeder Tag und jedes Problem eine
+        andere Herangehensweise benötigt. Ich arbeite fast immer mit Körperkontakt, da das wichtig ist für Dein
+        Nervensystem. Wenn Du durch besondere Erfahrungen keinen Körperkontakt möchtest, ist es Ziel der Therapie, das
+        wieder zuzulassen.
+      </p>
+      <h3 class="mt-4 font-bold">
+        Muss ich mich in der Therapie entkleiden?
+      </h3>
+      <p class="">
+        Nicht unbedingt. Für manche Techniken wie z.B. Massagen ist direkter Hautkontakt wünschenswert. Wir können das
+        aber gerne besprechen, wenn es für Dich ein Problem sein sollte.
+      </p>
+      <h3 class="mt-4 font-bold">
+        Was ist, wenn ich Angst habe vor der Therapie?
+      </h3>
+      <p class="">
+        Gespräche und bewusste Verhaltensänderungen laufen auf kognitiver Ebene ab und werden nur selten in emotionale
+        oder gar körperliche Ebenen integriert. In der tiefenpsychologischen Körperpsychotherapie werden Gespräche und
+        Tiefenanalyse in die Körperebene integriert. Dafür wird mit dem Körper gearbeitet in Form von Massagen,
+        Bewegungen, Atemtechniken und anderem.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="section__three bg-darkTurquis">
+  <div class="pt-16 pb-10 md:px-20 lg:pt-56 lg:px-36 lg:431 lg:first-line:pb-96 xl:px-64 2xl:px-80">
+    <h2 class="mb-0 -mt-6 text-2xl font-bold text-center lg:mb-8 text-veryDarkBrown">F A Q</h2>
+    <span class="h-0 mb-16 -mt-2 rounded-lg lg:block lg:h-1 w-36 bg-darkTurquis"></span>
+    <div class="pt-4 overflow-scroll">
+    </div>
+  </div>
+</section> -->
+
+
+
+<!-- 
+
+FOOTER
+
+ -->
+
+
+<footer class="w-screen mt-auto">
+  <div class="footer__namen">
+    <h2 class="namen--praxis">
+      PRAXIS
+      <br>
+      URVERTRAUEN
+    </h2>
+    <h2 class="namen--annes">
+      Anne Grysar
+    </h2>
+    <img src="../../assets/tree-CH_-MbAP.svg" alt="bottom half of the logo">
+  </div>
+  <div class="footer__kontakt-daten">
+    <h2 class="font-bold namen--annes">
+      ANNE GRYSAR
+    </h2>
+    <p class="kontakt-daten--addresse">
+      Klaus-Rösner-Ring 29, 25474 Hasloh
+    </p>
+    <p class="kontakt-daten--telefon">
+      Tel. +49 175 299 1654
+    </p>
+  </div>
+  <div class="namen--rechtliches">
+    <div class="impressum-kontakt-datenschutz">
+      <a href="" class="impressum">
+        Impressum
+      </a>
+      <a href="../html/mehr.html" class="kontakt">
+        Kontakt
+      </a>
+      <a href="../html/datenschutz.html" class="datenschutz">
+        Datenschutz
+      </a>
+    </div>
+    <p class="copyright">
+      © 2023 | Urvertrauen | Schleswig-Holstein
+    </p>
+  </div>
+</footer>
+
+</html>
+
+</html>
+</body>
+
+</html>
